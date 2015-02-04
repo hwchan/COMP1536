@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-
 body{
-	background: url("images/Summoners_Rift.jpg") no-repeat center center fixed; 
-=======
-html { 
-  background: url(image\Summoners_Rift.jpg) no-repeat center center fixed; 
->>>>>>> origin/master
-  background-size: 1920px 1080px;
-  background-color: #000000;
-  background-position: top; 
+	background: url("images/Summoners_Rift.jpg"); 
+	
 }
