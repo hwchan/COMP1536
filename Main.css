@@ -1,9 +1,7 @@
-html { 
-  background: url(Summoners_Rift.jpg) no-repeat center center fixed; 
+
+body{
+	background: url("images/Summoners_Rift.jpg") no-repeat center center fixed; 
   background-size: 1920px 1080px;
   background-color: #000000;
   background-position: top; 
-}
-body{
-	color: black;
 }
