@@ -1,20 +1,21 @@
-<<<<<<< HEAD
 body {
   margin: 0;
   background: url("images/Summoners_Rift.jpg") no-repeat; 
   background-size: contain;
   background-color: #000000;
   background-position: top; 
+  font-family: "Times New Roman";
 }
 
 .navbar {
-	background-color: #0C2830;
-	font-family: "Times New Roman";
+	border-style: solid;
+	border-width: 1px;
 	color: #8F7514;
+	background-color: #0C2830;
+
 	height: 26px;
 	width: 100vw;
 	margin-top: 0px;
-	box-shadow: 0px 0px 30px 1px #000000;
 }
 
 a:link, a:visited {
@@ -36,6 +37,10 @@ li {
 
 
 .scaling1 {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #8F7514;
+	background-color: #0C2830;
 	margin: auto;
 	width: 100vw;
 	max-width: 70%;
@@ -54,7 +59,6 @@ img {
 	max-width: 100%;
 }
 
-=======
 html { 
 	background: url("images/Summoners_Rift.jpg") no-repeat center;
 	background-size: contain;
@@ -64,14 +68,9 @@ html {
 body{
 	margin: 0;
 }
-.center-box{
-	background-color: #000000;
-	margin-left: auto;
-	margin-right: auto;
-	width: 925px;
-	opacity: .6;
+
+html { 
+  background: url("images/Summoners_Rift.jpg") no-repeat center top; 
+  background-color: #000000;
+  background-position: top; 
 }
-p{
-	color: #ffffff;
-}
->>>>>>> origin/master
