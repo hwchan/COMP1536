@@ -1,5 +1,55 @@
-html { 
-  background: url("images/Summoners_Rift.jpg") no-repeat center top; 
+body {
+  margin: 0;
+  background: url("images/Summoners_Rift.jpg") no-repeat; 
+  background-size: contain;
   background-color: #000000;
   background-position: top; 
 }
+
+.navbar {
+	background-color: #0C2830;
+	font-family: "Times New Roman";
+	color: #8F7514;
+	height: 26px;
+	width: 100vw;
+	margin-top: 0px;
+	box-shadow: 0px 0px 30px 1px #000000;
+}
+
+a:link, a:visited {
+    display: block;
+    background-color: #0C2830;
+    width: 240px;
+    font-weight: bold;
+    color: #8F7514;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+
+.scaling1 {
+	margin: auto;
+	width: 100vw;
+	max-width: 70%;
+	margin-top: 30px;
+	background-color: #D1D3D4;
+	box-shadow: 0px 0px 30px 1px #000000;
+}
+
+.scaling2 {
+	padding-top: 15px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+img {
+	max-width: 100%;
+}
+
