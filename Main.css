@@ -4,23 +4,21 @@ body {
   background-size: contain;
   background-color: #000000;
   background-position: top; 
-  font-family: "Times New Roman";
+  font-family: Georgia, serif;
 }
 
 .navbar {
 	border-style: solid;
 	border-width: 1px;
-	color: #8F7514;
 	background-color: #0C2830;
-
-	height: 26px;
+	color: #8F7514;
+	height: 60px;
 	width: 100vw;
 	margin-top: 0px;
 }
 
 a:link, a:visited {
     display: block;
-    background-color: #0C2830;
     width: 240px;
     font-weight: bold;
     color: #8F7514;
@@ -33,6 +31,8 @@ a:link, a:visited {
 li {
     display: inline;
     float: left;
+    padding: auto;
+    	background-color: #0C2830;
 }
 
 
@@ -44,7 +44,7 @@ li {
 	margin: auto;
 	width: 100vw;
 	max-width: 70%;
-	margin-top: 30px;
+	margin-top: 60px;
 	background-color: #D1D3D4;
 	box-shadow: 0px 0px 30px 1px #000000;
 }
