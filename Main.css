@@ -59,11 +59,6 @@ img {
 	max-width: 100%;
 }
 
-html { 
-	background: url("images/Summoners_Rift.jpg") no-repeat center;
-	background-size: contain;
-	background-color: #000000;
-	background-position: top; 
 }
 body{
 	margin: 0;
