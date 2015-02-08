@@ -5,6 +5,9 @@ body {
 	background: url("../images/Summoners_Rift.jpg") no-repeat center;
 	background-position: top; 
 }
+img.top {
+vertical-align: top;
+}
 .middle-container{
 	padding: 5px 40px;
 	background: rgba(0,0,0,.6);
@@ -31,6 +34,7 @@ body {
   .container {
     max-width: 900px;
 	padding: 0px;
+	font-size: 175%;
   }
 }
 .container{
