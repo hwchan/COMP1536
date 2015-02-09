@@ -6,15 +6,17 @@ body {
 	background-position: top; 
 }
 .middle-container{
-	padding: 5px 40px;
+	padding: 5px 10px;
 	background: rgba(0,0,0,.6);
 	color: white;
+	box-shadow: 0px 0px 10px 1px #000000;
 }
 .middle-content{
 	background: rgba(255,255,255,.8);
 	color: black;
 	padding: 15px 15px;
 	margin-top: 15px;
+	box-shadow: 0px 0px 30px 1px #000000;
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -25,13 +27,7 @@ body {
 	min-height: 50px;
 	margin-bottom: 0px;
 	border: 0px;
-}
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 900px;
-	padding: 0px;
-  }
+	box-shadow: 0px 0px 10px 1px #000000;
 }
 .container{
 	padding: 0px;
@@ -46,4 +42,36 @@ h1{
 }
 .capital{
 	font-size: 55px;
+}
+
+/* When the screen is > 768px */
+@media (min-width: 768px) {
+	/* Space out each li to be centered */
+	ul.nav.navbar-nav li {
+		font-size: 14px;
+		width: 98px;
+	}
+	/* Increase the padding for the transparent container*/
+	.middle-container{
+		padding: 5px 40px;
+	}
+	/* Center the nav ul*/
+	.nav {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		float: none;
+		width: 750px;
+	}
+	/* Cap the transparent container width to show background */
+	.container {
+		max-width: 900px;
+	}
+}
+/* When the screen is > 992px, space out each li to be centered */
+@media (min-width: 992px) {
+	ul.nav.navbar-nav li {
+		font-size: 18px;
+		width: 14.2%;
+	}
 }
