@@ -125,8 +125,17 @@ body {
 		max-width: 900px;
 	}
 }
-
-
+/* When the screen is > 1366px */
+@media (min-width: 1366px){
+	/* Increase the padding for the transparent container*/
+	.middle-container{
+		padding: 5px 40px;
+	}
+	/* Cap the transparent container width to show background */
+	.container{
+		max-width: 1366px;
+	}
+}
 
 /************* 
 	Footer
