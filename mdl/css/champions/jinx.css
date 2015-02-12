@@ -1,0 +1,23 @@
+html {
+	background: url("../../images/jinx/Splash.jpg") no-repeat top;
+}
+#attack {
+	/* width 9 * 40px + 30px*/
+	width: 90%;
+	max-width: 392px;
+}
+#defence {
+	/* width 2 * 40px + 30px*/
+	width: 20%;
+	max-width: 112px;
+}
+#ability {
+	/* width 4 * 40px + 30px*/
+	width: 40%;
+	max-width: 192px;
+}
+#difficulty {
+	/* width 6 * 40px + 30px*/
+	width: 60%;
+	max-width: 272px;
+}
