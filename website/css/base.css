@@ -168,6 +168,21 @@ footer{
 
 
 
+/* Sign in modal */
+.modal-content {
+	background-color: #222222;
+	border-radius: 0;
+	color: #fff;
+	border: 0;
+}
+@media (min-width: 768px){
+	.modal-dialog {
+		width: 500px;
+	}
+}
+
+
+
 /**********************
 	Shared styling
 ***********************/
