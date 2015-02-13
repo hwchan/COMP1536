@@ -1,6 +1,6 @@
 /*********************/
 /* Background        */
-/*********************/
+/*********************/	
 body {
 	background: linear-gradient(to bottom, rgba(0,0,0,.0) 0px,rgba(0,0,0,.95) 960px,rgba(0,0,0,1) 1080px); 
 }
@@ -78,7 +78,7 @@ p {
 	padding-right: 8px;
 }
 #attack {
-	background-image: url("../images/Stats/Attack.png");
+	background-image: url("images/Attack.png");
 	margin-top: 1px;
 	/* width 2 * 40px + 30px*/
 	width: 20%;
@@ -86,21 +86,21 @@ p {
 	background-color: #AA1111;
 }
 #defence {
-	background-image: url("../images/Stats/Defence.png");
+	background-image: url("images/Defence.png");
 	/* width 3 * 40px + 30px*/
 	width: 30%;
 	max-width: 120px;
 	background-color: #002801;
 }
 #ability {
-	background-image: url("../images/Stats/Ability.png");
+	background-image: url("images/Ability.png");
 	/* width 10 * 40px + 30px*/
 	width: 100%;
 	max-width: 400px;
 	background-color: #062347;
 }
 #difficulty {
-	background-image: url("../images/Stats/Difficulty.png");
+	background-image: url("images/Difficulty.png");
 	/* width 6 * 40px + 30px*/
 	width: 60%;
 	max-width: 240px;
