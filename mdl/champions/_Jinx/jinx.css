@@ -1,5 +1,7 @@
 html {
-	background: url("../../images/jinx/Splash.jpg") no-repeat top;
+	background: url("images/Splash.jpg") no-repeat top;
+	background-size: 1920px, 1080px;
+	background-color: black;
 }
 #attack {
 	/* width 9 * 40px + 30px*/
