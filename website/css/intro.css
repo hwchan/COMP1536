@@ -1,0 +1,68 @@
+html{
+	background-color: #000000;
+}
+body {
+	background: -webkit-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 80%), url("../images/league-of-legends.jpg") no-repeat;
+	background-position: top; 
+}
+img.top {
+vertical-align: top;
+}
+
+img.middle {
+float: left;
+}
+
+p.paragraph{
+color: rgba(200,200,200,.8);
+padding: 1%;
+}
+
+img.gameplay1{
+position: relative;
+left:10px;
+top: 20px;
+width: 50%;
+float: left;
+border-width: 5px;
+border-style: solid;
+border-color: rgba(50, 225,225,.15)
+}
+
+h2 {
+background: rgba(0,0,0,.8);
+color: #0679bf;
+padding-left: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.middle-content{
+	background: rgba(0,0,0,.9);
+}
+
+.block1 {
+	background: rgba(8,40,72,.9);
+	margin-top: 2%;
+	
+	}
+.inner-content2{
+	background: rgba(6,14,31,.9);
+	color: rgba(200,150,0,1);
+	margin-left: 52%;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 1%;
+	}
+.inner-content{
+	background-image:-webkit-linear-gradient(rgba(0,0,0, 0.7) 50%,rgba(0,0,0, 0.7) 50%), url("../images/map.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 5px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: rgba(200,175,0,.8)
+	
+}
