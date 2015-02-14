@@ -189,7 +189,7 @@ footer{
 h1{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #ffd251;
-	margin-top: 5px;
+	margin: 0;
 	text-shadow: 1px 1px 3px #000;
 }
 hr{
