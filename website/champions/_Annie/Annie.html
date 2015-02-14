@@ -201,7 +201,34 @@
 			</footer>
 		  </div>
 
-
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="POST">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						Email:<br>
+						<input type="email" placeholder="example@email.com" name="email" size="40" required>
+						<br>
+						<input type="submit" class="btn btn-primary pull-right" value="Sign in">
+						<br>
+						Password:<br>
+						<input type="password" name="password1" size="40" required>
+						<br>
+						<a href="#" class="small">Forgot your password?</a>
+						<hr>
+						Repeat password:<br>
+						<input type="password" name="password2" size="40">
+						<input type="submit" class="btn btn-primary pull-right" value="Register">
+						<br>
+						<input type="checkbox" name="termsConditions" value="true">
+						<span class="small">I accept the terms and conditions</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	</div><!-- /.middle -->
     <!-- Bootstrap core JavaScript
