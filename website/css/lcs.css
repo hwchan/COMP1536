@@ -18,7 +18,11 @@ h2 {color:#0679BF;}
 
 .team-img {
 	margin-top: 25px;
-	margin-left: 15px;
-	margin-bottom: 3px;}
+	margin-bottom: 3px;
+	/* Center the image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 h3 {color: #ffd251;}
