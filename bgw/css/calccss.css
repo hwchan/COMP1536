@@ -1,0 +1,19 @@
+.left-self {float: left; height = "308"; width = "560"}
+
+.Selfitems {float: right; height = "308"; width = "560"}
+
+.left-enemy {float: left; height = "308"; width = "560"}
+
+.Enemyitems {float: right; height = "308"; width = "560"}
+
+.Selfitems ul{list-style-type:none}
+
+.Selfitems ul li{display: inline}
+
+.Enemyitems ul{list-style-type:none}
+
+.Enemyitems ul li{display: inline}
+
+.passive {background-image: url("../images/abilities/Tryndamere_passive.png");
+    background-repeat: none;
+}
