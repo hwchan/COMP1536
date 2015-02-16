@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+    <link rel="icon" href="images/icon.png">
 
     <title>Introduction to League of Legends</title>
 
@@ -91,7 +91,34 @@
 			</footer>
 		</div>
 
-
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="POST">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						Email:<br>
+						<input type="email" placeholder="example@email.com" name="email" size="40" required>
+						<br>
+						<input type="submit" class="btn btn-primary pull-right" value="Sign in">
+						<br>
+						Password:<br>
+						<input type="password" name="password1" size="40" required>
+						<br>
+						<a href="#" class="small">Forgot your password?</a>
+						<hr>
+						Repeat password:<br>
+						<input type="password" name="password2" size="40">
+						<input type="submit" class="btn btn-primary pull-right" value="Register">
+						<br>
+						<input type="checkbox" name="termsConditions" value="true">
+						<span class="small">I accept the <a data-toggle="tooltip" data-placement="top" title="By accepting, you forfeit all your assets to us.">terms and conditions</a></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	</div><!-- /.middle -->
     <!-- Bootstrap core JavaScript
