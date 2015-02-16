@@ -1,33 +1,48 @@
+/*********************/
+/* Background        */
+/*********************/	
 html {
 	background: url("../images/team_graves_2.jpg") no-repeat top;
 	background-size: 1920px, 1080px;
 	background-color: black;
 }
-body {
-	background: linear-gradient(to bottom, rgba(0,0,0,.0) 0px,rgba(0,0,0,.95) 960px,rgba(0,0,0,1) 1080px); 
-}
+	/* Adds a gradient over the background as not to have an abrupt ending to it. */
+	body {
+		background: linear-gradient(to bottom, rgba(0,0,0,.0) 0px,rgba(0,0,0,.95) 960px,rgba(0,0,0,1) 1080px); 
+	}
+
+/*********************/
+/* Middle container  */
+/*********************/
 .middle-content {
+	/* Sets body background and test color. */
 	background: rgba(28,28,28,.8);
 	color: white;
 }
-.group {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
-.icon {
-	width: 120px;
-	text-align: center;
-	margin-right: 15px;
-}
+	.group {
+		/* Creates a flex box to contain multiple .icon elements. */
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+		.icon {
+			/* Styles the container for each champions name icon and page link. */
+			width: 120px;
+			text-align: center;
+			margin-right: 15px;
+		}
+		
+/*********************/
+/* Generic           */
+/*********************/
 hr {
-	/* Gives the hr a black shadow as to make it stand out from the background*/
+	/* Makes the HR white. */
 	border-color: white;
 	height: 1px;
 }
-.hrsmall {
-	/* Taller, but lighter feeling hr element. */
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 50%;
-}
+	.hrsmall {
+		/* Taller, but lighter feeling hr element. */
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: 50%;
+	}
