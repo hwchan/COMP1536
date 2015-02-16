@@ -1,0 +1,25 @@
+.middle-content {
+	background: rgba(28,28,28,.8);
+	color: white;
+}
+.group {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.icon {
+	width: 120px;
+	text-align: center;
+	margin-right: 15px;
+}
+hr {
+	/* Gives the hr a black shadow as to make it stand out from the background*/
+	border-color: white;
+	height: 1px;
+}
+.hrsmall {
+	/* Taller, but lighter feeling hr element. */
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 50%;
+}
