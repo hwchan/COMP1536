@@ -168,12 +168,17 @@ footer{
 
 
 
-/* Sign in modal */
+/******************** 
+	Sign-in Modal
+*********************/
 .modal-content {
 	background-color: #222222;
 	border-radius: 0;
 	color: #fff;
 	border: 0;
+}
+input {
+	color: black;
 }
 @media (min-width: 768px){
 	.modal-dialog {
