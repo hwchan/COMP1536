@@ -15,9 +15,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Base style -->
 	<link href="css/index.css" rel="stylesheet">
-    <link href="css/calccss.css" rel="stylesheet">
 	<!-- Custom page style -->
-	
+    <link href="css/calc.css" rel="stylesheet">	
 
   </head>
 
@@ -57,14 +56,15 @@
 		</nav>
 
 		  <div class="middle-container">
-			<h1><span style="font-size:55px">N</span>EWS</h1>
+			<h1><span style="font-size:55px">D</span>AMAGE CALCULATOR</h1>
 			<div class="middle-content">
-				<div class = "left-self">
-					<h4> Please click to select a champion</h4>
+				<div class = "champ-select">
+					<div>
+					<h4> Champion selection</h4>
 					<img alt="IE" src="../images/champions/Tryndamere_Square_0.png" height = "120" width = "120">
-				</div>
-				<div class = "Selfitems">
-					<h4> Please click to select your items</h4>
+					</div>
+					<div>
+					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select your items</h4>
 					<ul>
 						<li><img alt="IE" src="../images/items/Blade_of_the_ruined_king_item.png" height = "100" width = "100"></li>
 						<li><img alt="IE" src="../images/items/Infinity_Edge_item.png" height = "100" width = "100"></li>
@@ -73,40 +73,55 @@
 						<li><img alt="IE" src="../images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
 						<li><img alt="IE" src="../images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
 					</ul>
+					</div>
 				</div>
 				
-				<p style="clear:both"></p><br><br>
-				<img alt="TryndamerePassive" src="../images/abilities/Tryndamere_Passive.png" height = "100" width = "100">
-				Battle Fury: The damage per hit is x. The damage per second is y.
 				<br><br>
-				<img alt="TryndamereQ" src="../images/abilities/Tryndamere_Q.png" height = "100" width = "100">
-				Bloodlust: The damage per hit is x. The damage per second is y.
-				<br><br>
-				<img alt="TryndamereW" src="../images/abilities/Tryndamere_W.png" height = "100" width = "100">
-				Mocking Shout: The damage per hit is x. The damage per second is y.
-				<br><br>
-				<img alt="TryndamereE" src="../images/abilities/Tryndamere_E.png" height = "100" width = "100">
-				Spinning Slash: The damage per hit is x. The damage per second is y.
-				<br><br>
-				<img alt="TryndamereR" src="../images/abilities/Tryndamere_R.png" height = "100" width = "100">
-				Undying Rage: The damage per hit is x. The damage per second is y.
-				<br><br>
+				<div class="outcomebox">
+					<div>
+						<img alt="TryndamerePassive" src="../images/abilities/Tryndamere_Passive.png" height = "100" width = "100">
+						<br>Battle Fury:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+					<div>
+						<img alt="TryndamereQ" src="../images/abilities/Tryndamere_Q.png" height = "100" width = "100">
+						<br>Bloodlust:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+					<div>
+						<img alt="TryndamereW" src="../images/abilities/Tryndamere_W.png" height = "100" width = "100">
+						<br>Mocking Shout: <br>Damage per hit is x. <br> Damage per second is y.
+					</div>
+					<div>
+						<img alt="TryndamereE" src="../images/abilities/Tryndamere_E.png" height = "100" width = "100">
+						<br>Spinning Slash: 
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+					<div>
+						<img alt="TryndamereR" src="../images/abilities/Tryndamere_R.png" height = "100" width = "100">
+						<br>Undying Rage: 
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+				</div>
 				
 				Your auto-attack damage per hit is x. Your auto-attack per second is y. <br><br>
-				Your combined damage per second is: z
-
-				<div class="passive">
-				
-				</div>
+				Your total health is w. Your combined damage per second is z. It is (un)favourable for you to fight this enemy.
 				
 
+				
 				<hr>
-				<div class = "left-enemy">
+				
+				<div class = "champ-select">
+					<div>
 					<h4> Please select enemy champion</h4>
 					<img alt="IE" src="../images/champions/Amumu_Square_0.png" height = "120" width = "120">
-				</div>
-				<div class = "Enemyitems">
-					<h4> Please click to select your items</h4>
+					</div>
+					<div>
+					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select enemy items</h4>
 					<ul>
 						<li><img alt="IE" src="../images/items/Frozen_heart_item.png" height = "100" width = "100"></li>
 						<li><img alt="IE" src="../images/items/Randuin's_Omen_item.png" height = "100" width = "100"></li>
@@ -114,31 +129,47 @@
 						<li><img alt="IE" src="../images/items/Abyssal_Scepter_item.png" height = "100" width = "100"></li>
 						<li><img alt="IE" src="../images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
 						<li><img alt="IE" src="../images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+					</div>
+					<div></div>
 				</div>
 
-				<p style="clear:both"></p>
-				<img alt="Amumupass" src="../images/abilities/SadMummy_CorpseExplosion.png" height = "100" width = "100">
-				Cursed Touch: The damage per hit is x. The damage per second is y.
-				<br><br>
-				<img alt="AmumuQ" src="../images/abilities/SadMummy_BandageFlinger.png" height = "100" width = "100">
-				Bandage Toss: The damage per hit is x. The damage per second is y.
-				<br><br>
-				<img alt="AmumuW" src="../images/abilities/SadMummy_AuraOfDespair.png" height = "100" width = "100">
-				Despair: The damage per hit is x. The damage per second is y.
-				<br><br>
-				<img alt="AmumuE" src="../images/abilities/SadMummy_Tantrum.png" height = "100" width = "100">
-				Tantrum: The damage per hit is x. The damage per second is y.
-				<br><br>
-				<img alt="AmumuR" src="../images/abilities/SadMummy_BandAidThingy.png" height = "100" width = "100">
-				Curse of the Sad Mummy: The damage per hit is x. The damage per second is y.
-				<br><br>
-
+				<div class="outcomebox">
+					<div>
+						<img alt="Amumupass" src="../images/abilities/SadMummy_CorpseExplosion.png" height = "100" width = "100">
+						<br>Cursed Touch:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+					<div>
+						<img alt="Amumupass" src="../images/abilities/SadMummy_BandageFlinger.png" height = "100" width = "100">
+						<br>Bandage Toss:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+						<div>
+						<img alt="Amumupass" src="../images/abilities/SadMummy_AuraOfDespair.png" height = "100" width = "100">
+						<br>Despair:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+						<div>
+						<img alt="Amumupass" src="../images/abilities/SadMummy_Tantrum.png" height = "100" width = "100">
+						<br>Tantrum:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>
+					<div>
+						<img alt="Amumupass" src="../images/abilities/SadMummy_BandAidThingy.png" height = "100" width = "100">
+						<br>Curse of the Sad Mummy:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
+					</div>					
+				</div>
 				Your auto-attack damage per hit is x. Your auto-attack per second is y. <br><br>
-				Your combined damage per second is: z
+				Your total health is w. Your combined damage per second is: z
 
 			</div>
 			
-			<div style="clear: both;">			
 			<footer class="row">
 				<div class="col-md-4 footer-left">
 					Group 12: hwc, mk, mdl, plm, bw
