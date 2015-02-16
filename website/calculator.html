@@ -61,10 +61,13 @@
 			<div class="middle-content">
 				<div class = "champ-select">
 					<div>
+                    <!--Click on the icon to select your champion. A pop-up should appear to let you select from 40+ champions.
+                        It is in the category of JS so the intereactive part will be done in next milestone.-->
 					<h4> Champion selection</h4>
 					<img alt="IE" src="../images/champions/Tryndamere_Square_0.png" height = "120" width = "120">
 					</div>
 					<div>
+                    <!--Same with selecting item, right now they're not interactive-->
 					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select your items</h4>
 					<ul>
 						<li><img alt="IE" src="../images/items/Blade_of_the_ruined_king_item.png" height = "100" width = "100"></li>
@@ -79,6 +82,8 @@
 				
 				<br><br>
 				<div class="outcomebox">
+                    <!--The compute outcome will be displayed here. Damage per hit is the damage it does in the normal sense.
+                    Damage over time takes into consideration of the ability cooldown and attack speed (for auto-attack)-->
 					<div>
 						<img alt="TryndamerePassive" src="../images/abilities/Tryndamere_Passive.png" height = "100" width = "100">
 						<br>Battle Fury:
@@ -109,7 +114,10 @@
 					</div>
 				</div>
 				
-				Your auto-attack damage per hit is x. Your auto-attack per second is y. <br><br>
+                <!--A comparision between your health and enemy dps will be calculated to see how many seconds it takes
+                enemy to kill you and vice versa. This will return "favourable" if you can outlivev your opponent
+                and win the duel.-->
+				Your auto-attack damage per hit is x. Your auto-attack damage per second is y. <br><br>
 				Your total health is w. Your combined damage per second is z. It is (un)favourable for you to fight this enemy.
 				
 
@@ -118,6 +126,7 @@
 				
 				<div class = "champ-select">
 					<div>
+                    <!--The same as above but this one deals with enemy champion and his items-->
 					<h4> Please select enemy champion</h4>
 					<img alt="IE" src="../images/champions/Amumu_Square_0.png" height = "120" width = "120">
 					</div>
@@ -130,8 +139,8 @@
 						<li><img alt="IE" src="../images/items/Abyssal_Scepter_item.png" height = "100" width = "100"></li>
 						<li><img alt="IE" src="../images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
 						<li><img alt="IE" src="../images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
-					</div>
-					<div></div>
+					</ul>
+                    </div>
 				</div>
 
 				<div class="outcomebox">
