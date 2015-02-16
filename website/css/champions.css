@@ -1,7 +1,10 @@
-.container {
+.group {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 }
 .icon {
-	width: 128px;
+	width: 120px;
+	text-align: center;
+	margin-right: 15px;
 }
