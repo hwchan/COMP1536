@@ -38,7 +38,7 @@
 					<li><a href="index.html">News</a></li>
 					<li><a href="intro.html">Intro</a></li>
 					<li class="active">
-						<a href="" data-toggle="dropdown">Media</a>
+						<a href="" data-toggle="dropdown">Media<span class="caret"></span></a>
 						<ul class="dropdown-menu inverse-dropdown">
 							<li class="active"><a href="videos.html">Videos</a></li>
 							<li><a href="lcs.html">Pro teams</a></li>
@@ -91,23 +91,23 @@
 	</div><!-- /.middle -->
 	
 	<!-- Sign in modal -->
-	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="POST">
 					<div class="modal-body">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						Email:<br>
+						<span class="modal-title">Email:</span><br>
 						<input type="email" placeholder="example@email.com" name="email" size="40" required>
 						<br>
 						<input type="submit" class="btn btn-primary pull-right" value="Sign in">
 						<br>
-						Password:<br>
+						<span class="modal-title">Password:</span><br>
 						<input type="password" name="password1" size="40" required>
 						<br>
 						<a href="#" class="small">Forgot your password?</a>
-						<hr>
-						Repeat password:<br>
+						<hr class="hr-white">
+						<span class="modal-title">Repeat password:</span><br>
 						<input type="password" name="password2" size="40">
 						<input type="submit" class="btn btn-primary pull-right" value="Register">
 						<br>

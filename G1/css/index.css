@@ -31,6 +31,7 @@ h2 {
 	padding: 1%;
 }
 
+/* Overwrite pagination styling */
 .pagination>li>a{
 	background-color: #222;
 	border-color: #1B1B1B;
