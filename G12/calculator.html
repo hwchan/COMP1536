@@ -22,6 +22,7 @@
   </head>
 
   <body>
+  <form action="" method="">
 	<div class="container">
 	<a href="index.html"><img alt="League of Legends logo" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
 	
@@ -60,22 +61,36 @@
 			<h1><span class="h1-capital">C</span>ALCULATOR</h1>
 			<div class="middle-content">
 				<div class = "champ-select">
-					<div>
+					<div class = "champions">
                     <!--Click on the icon to select your champion. A pop-up should appear to let you select from 20+ champions.
                         It is in the category of JS so the interactive part will be done in the next milestone.-->
 					<h4> Champion selection</h4>
+					<button onclick="myFunction()">
 					<img alt="IE" src="champions/_Tryndamere/images/Icon.png" height = "120" width = "120">
+					</button>
 					</div>
-					<div>
+					<div class = "items">
                     <!--Same with selecting item, right now they're not interactive-->
 					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select your items</h4>
 					<ul>
+											<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Blade_of_the_Ruined_King_item.png" height = "100" width = "100"></li>
+						</button>
+												<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Infinity_Edge_item.png" height = "100" width = "100"></li>
+						</button>
+												<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Berserker's_Greaves_item.png" height = "100" width = "100"></li>
+						</button>
+												<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						</button>
+												<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						</button>
+												<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						</button>
 					</ul>
 					</div>
 				</div>
@@ -117,28 +132,43 @@
                 <!--A comparision between your health and enemy dps will be calculated to see how many seconds it takes
                 enemy to kill you and vice versa. This will return "favourable" if you can outlive your opponent
                 and win the duel.-->
-				Your auto-attack damage per hit is x. Your auto-attack damage per second is y. <br><br>
-				Your total health is w. Your combined damage per second is z. It is (un)favourable for you to fight this enemy.
+						<input type="submit" value="Calculate">
+				<p>Your auto-attack damage per hit is x. Your auto-attack damage per second is y.<p> <br>
+				<p>Your total health is w. Your combined damage per second is z. It is (un)favourable for you to fight this enemy.<p>
 				
 
 				
 				<hr>
 				
 				<div class = "champ-select">
-					<div>
+					<div class = "champion">
                     <!--The same as above but this one deals with enemy champion and his items-->
 					<h4> Please select enemy champion</h4>
+										<button onclick="myFunction()">
 					<img alt="IE" src="champions/_Amumu/images/Icon.png" height = "120" width = "120">
+					</button>
 					</div>
-					<div>
+					<div class = "items">
 					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select enemy items</h4>
 					<ul>
+										<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Frozen_Heart_item.png" height = "100" width = "100"></li>
+						</button>
+												<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Randuin's_Omen_item.png" height = "100" width = "100"></li>
+						</button>
+						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Ninja_Tabi_item.png" height = "100" width = "100"></li>
+						</button>
+						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Abyssal_Scepter_item.png" height = "100" width = "100"></li>
+						</button>
+						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						</button>
+						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						</button>
 					</ul>
                     </div>
 				</div>
@@ -176,8 +206,9 @@
 						<br>The damage per second is y.
 					</div>					
 				</div>
-				Your auto-attack damage per hit is x. Your auto-attack per second is y. <br><br>
-				Your total health is w. Your combined damage per second is: z
+						<input type="submit" value="Calculate">
+				<p>Your auto-attack damage per hit is x. Your auto-attack per second is y.<p><br>
+				<p>Your total health is w. Your combined damage per second is: z<p>
 
             </div>
 			
@@ -236,5 +267,14 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+	<script>
+	function myFunction(){
+	    window.open("champions.html");
+		}
+	function myFunction2(){
+	window.open("items.html");
+	}
+		</script>
+</form>
   </body>
 </html>
