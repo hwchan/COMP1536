@@ -170,25 +170,27 @@
 	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="POST">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
 					<div class="modal-body">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<span class="modal-title">Email:</span><br>
-						<input type="email" placeholder="example@email.com" name="email" size="40" required>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
 						<br>
-						<input type="submit" class="btn btn-primary pull-right" value="Sign in">
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Sign in">
 						<br>
 						<span class="modal-title">Password:</span><br>
-						<input type="password" name="password1" size="40" required>
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<input type="password" name="password1" size="40">
 						<br>
 						<a href="#" class="small">Forgot your password?</a>
-						<hr class="hr-white">
-						<span class="modal-title">Repeat password:</span><br>
-						<input type="password" name="password2" size="40">
-						<input type="submit" class="btn btn-primary pull-right" value="Register">
-						<br>
-						<input type="checkbox" name="termsConditions" value="true">
-						<span class="small">I accept the <a data-toggle="tooltip" data-placement="top" title="By accepting, you forfeit all your assets to us.">terms and conditions</a></span>
+						<div id="registerArea" style="display:none">
+							<hr class="hr-white">
+							<span class="modal-title">Repeat password:</span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<input type="checkbox" name="termsConditions" value="false">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a></span>
+						</div>
 					</div>
 				</form>
 			</div>
