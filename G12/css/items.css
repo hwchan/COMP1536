@@ -40,3 +40,6 @@
 .sub:hover {
 	background-color: #ccc;
 }
+.popover.bottom {
+  margin-top: 40px;
+}
