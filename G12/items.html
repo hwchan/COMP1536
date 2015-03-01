@@ -13,11 +13,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <!-- Base style -->
     <link href="css/base.css" rel="stylesheet">
 	<!-- Custom page style -->
     <link href="css/items.css" rel="stylesheet">
-	
 
   </head>
 
@@ -61,6 +61,8 @@
 			<div class="middle-content">
 				<h3> Please sort according to the stats you want. There are 3 filters available. </h3>
                 <!--Here's the part where I create dropdown menus using bootstrap-->
+
+                <br>
 				<div class="btn-group">
 				<button class="btn btn-default">Filter 1</button>
 				<button class="btn dropdown-toggle btn-default" data-toggle="dropdown">
@@ -120,73 +122,183 @@
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Magic Resist</a></li>
 				</ul>
 				</div>
-				<br><br>
+
+				<div class="btn-group">
+					<input type="submit" class="sub">
+				</div>
+				<br><br><br>
             <!--This part is where the items will show up after the filters. Right now the icons do nothing but
                 for the next milestone JS will be programmed into them so we can have a mouseover effect and it'll
                 display individual item's stats-->
+
 			<div class="items">
-				<div><img alt="botrk" src="images/items/Blade_of_the_Ruined_King_item.png" height = "64" width = "64"></div>
-				<div><img alt="IE" src="images/items/Infinity_Edge_item.png" height = "64" width = "64"></div>
-				<div><img alt="Abyssal" src="images/items/Abyssal_Scepter_item.png" height = "64" width = "64"></div>
-				<div><img alt="Athene's" src="images/items/Athene's_Unholy_Grail_item.png" height = "64" width = "64"></div>
-				<div><img alt="BF" src="images/items/B._F._Sword_item.png" height = "64" width = "64"></div>
-				<div><img alt="ASboots" src="images/items/Berserker's_Greaves_item.png" height = "64" width = "64"></div>
-				<div><img alt="Cutlass" src="images/items/Bilgewater_Cutlass_item.png" height = "64" width = "64"></div>
-				<div><img alt="DoranBlade" src="images/items/Doran's_Blade_item.png" height = "64" width = "64"></div>
+
+
+				<br>
+				<div>
+					<a data-toggle="popover" title="Blade of the Ruined King" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="botrk" src="images/items/Blade_of_the_Ruined_King_item.png" height = "64" width = "64"></a>
+				</div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="IE" src="images/items/Infinity_Edge_item.png" height = "64" width = "64">
+				</div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Abyssal" src="images/items/Abyssal_Scepter_item.png" height = "64" width = "64">
+				</div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Athene's" src="images/items/Athene's_Unholy_Grail_item.png" height = "64" width = "64">
+				</div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="BF" src="images/items/B._F._Sword_item.png" height = "64" width = "64">
+				</div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="ASboots" src="images/items/Berserker's_Greaves_item.png" height = "64" width = "64">
+				</div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Cutlass" src="images/items/Bilgewater_Cutlass_item.png" height = "64" width = "64">
+				</div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="DoranBlade" src="images/items/Doran's_Blade_item.png" height = "64" width = "64">
+				</div>
 			</div> <br>
 			
 			<div class="items">
-				<div><img alt="FrozenHeart" src="images/items/Frozen_Heart_item.png" height = "64" width = "64"></div>
-				<div><img alt="Giants_Belt" src="images/items/Giant's_Belt_item.png" height = "64" width = "64"></div>
-				<div><img alt="Gunblade" src="images/items/Hextech_Gunblade_item.png" height = "64" width = "64"></div>
-				<div><img alt="HexRevolver" src="images/items/Hextech_Revolver_item.png" height = "64" width = "64"></div>
-				<div><img alt="Iceborn" src="images/items/Iceborn_Gauntlet_item.png" height = "64" width = "64"></div>
-				<div><img alt="LW" src="images/items/Last_Whisper_item.png" height = "64" width = "64"></div>
-				<div><img alt="Liandry's" src="images/items/Liandry's_Torment_item.png" height = "64" width = "64"></div>
-				<div><img alt="LichBane" src="images/items/Lich_Bane_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="FrozenHeart" src="images/items/Frozen_Heart_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Giants_Belt" src="images/items/Giant's_Belt_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Gunblade" src="images/items/Hextech_Gunblade_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="HexRevolver" src="images/items/Hextech_Revolver_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Iceborn" src="images/items/Iceborn_Gauntlet_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="LW" src="images/items/Last_Whisper_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Liandry's" src="images/items/Liandry's_Torment_item.png" height = "64" width = "64"></div>
+				<div>	
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="LichBane" src="images/items/Lich_Bane_item.png" height = "64" width = "64"></div>
 			</div> <br>
 				
 			<div class="items">
-				<div><img alt="Solari" src="images/items/Locket_of_the_Iron_Solari_item.png" height = "64" width = "64"></div>
-				<div><img alt="Manamune" src="images/items/Manamune_item.png" height = "64" width = "64"></div>
-				<div><img alt="Maw" src="images/items/Maw_of_Malmortius_item.png" height = "64" width = "64"></div>
-				<div><img alt="Mikael's" src="images/items/Mikael's_Crucible_item.png" height = "64" width = "64"></div>
-				<div><img alt="Morellonomicon" src="images/items/Morellonomicon_item.png" height = "64" width = "64"></div>
-				<div><img alt="Rod" src="images/items/Needlessly_Large_Rod_item.png" height = "64" width = "64"></div>
-				<div><img alt="Negatron" src="images/items/Negatron_Cloak_item.png" height = "64" width = "64"></div>
-				<div><img alt="Tabi" src="images/items/Ninja_Tabi_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Solari" src="images/items/Locket_of_the_Iron_Solari_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Manamune" src="images/items/Manamune_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Maw" src="images/items/Maw_of_Malmortius_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Mikael's" src="images/items/Mikael's_Crucible_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Morellonomicon" src="images/items/Morellonomicon_item.png" height = "64" width = "64"></div>
+				<div>	
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Rod" src="images/items/Needlessly_Large_Rod_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Negatron" src="images/items/Negatron_Cloak_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Tabi" src="images/items/Ninja_Tabi_item.png" height = "64" width = "64"></div>
 			</div> <br>
 			
 			<div class="items">
-				<div><img alt="Phage" src="images/items/Phage_item.png" height = "64" width = "64"></div>
-				<div><img alt="PD" src="images/items/Phantom_Dancer_item.png" height = "64" width = "64"></div>
-				<div><img alt="Rabadon's" src="images/items/Rabadon's_Deathcap_item.png" height = "64" width = "64"></div>
-				<div><img alt="Randuin" src="images/items/Randuin's_Omen_item.png" height = "64" width = "64"></div>
-				<div><img alt="Hydra" src="images/items/Ravenous_Hydra_item.png" height = "64" width = "64"></div>
-				<div><img alt="RoA" src="images/items/Rod_of_Ages_item.png" height = "64" width = "64"></div>
-				<div><img alt="Runaan's" src="images/items/Runaan's_Hurricane_item.png" height = "64" width = "64"></div>
-				<div><img alt="Rylai's" src="images/items/Rylai's_Crystal_Scepter_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Phage" src="images/items/Phage_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="PD" src="images/items/Phantom_Dancer_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Rabadon's" src="images/items/Rabadon's_Deathcap_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Randuin" src="images/items/Randuin's_Omen_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Hydra" src="images/items/Ravenous_Hydra_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="RoA" src="images/items/Rod_of_Ages_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Runaan's" src="images/items/Runaan's_Hurricane_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Rylai's" src="images/items/Rylai's_Crystal_Scepter_item.png" height = "64" width = "64"></div>
 			</div> <br>
 
 			<div class="items">
-				<div><img alt="Sheen" src="images/items/Sheen_item.png" height = "64" width = "64"></div>
-				<div><img alt="Sorcboots" src="images/items/Sorcerer's_Shoes_item.png" height = "64" width = "64"></div>
-				<div><img alt="Visage" src="images/items/Spirit_Visage_item.png" height = "64" width = "64"></div>
-				<div><img alt="Sunfire" src="images/items/Sunfire_Cape_item.png" height = "64" width = "64"></div>
-				<div><img alt="BlackCleaver" src="images/items/The_Black_Cleaver_item.png" height = "64" width = "64"></div>
-				<div><img alt="BT" src="images/items/The_Bloodthirster_item.png" height = "64" width = "64"></div>
-				<div><img alt="Brutaliser" src="images/items/The_Brutalizer_item.png" height = "64" width = "64"></div>
-				<div><img alt="Thornmail" src="images/items/Thornmail_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Sheen" src="images/items/Sheen_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Sorcboots" src="images/items/Sorcerer's_Shoes_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Visage" src="images/items/Spirit_Visage_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Sunfire" src="images/items/Sunfire_Cape_item.png" height = "64" width = "64"></div>
+				<div>	
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="BlackCleaver" src="images/items/The_Black_Cleaver_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="BT" src="images/items/The_Bloodthirster_item.png" height = "64" width = "64"></div>
+				<div>	
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Brutaliser" src="images/items/The_Brutalizer_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Thornmail" src="images/items/Thornmail_item.png" height = "64" width = "64"></div>
 			</div> <br>
 
 			<div class="items">
-				<div><img alt="TriForce" src="images/items/Trinity_Force_item.png" height = "64" width = "64"></div>
-				<div><img alt="VampSceptre" src="images/items/Vampiric_Scepter_item.png" height = "64" width = "64"></div>
-				<div><img alt="VoidStaff" src="images/items/Void_Staff_item.png" height = "64" width = "64"></div>
-				<div><img alt="Warmog" src="images/items/Warmog's_Armor_item.png" height = "64" width = "64"></div>
-				<div><img alt="Zeal" src="images/items/Zeal_item.png" height = "64" width = "64"></div>
-				<div><img alt="Zephyr" src="images/items/Zephyr_item.png" height = "64" width = "64"></div>
-				<div><img alt="Zhonya's" src="images/items/Zhonya's_Hourglass_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="TriForce" src="images/items/Trinity_Force_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="VampSceptre" src="images/items/Vampiric_Scepter_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="VoidStaff" src="images/items/Void_Staff_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Warmog" src="images/items/Warmog's_Armor_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Zeal" src="images/items/Zeal_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Zephyr" src="images/items/Zephyr_item.png" height = "64" width = "64"></div>
+				<div>
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Zhonya's" src="images/items/Zhonya's_Hourglass_item.png" height = "64" width = "64"></div>
 				<div></div>
 			</div> <br>
 		</div>			
@@ -243,6 +355,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/items.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
   </body>

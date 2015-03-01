@@ -13,3 +13,30 @@
     -ms-flex: 1;  /* IE 10 */    
     flex: 1;
 }
+
+.popover {
+	color:black;
+	background-color: rgba(255, 255,255, .9);
+}
+.popover-title {
+	background-color: #ffffff;
+	color:#12313D;
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+}
+.popover-content {
+	margin-top: -5px;
+}
+.sub {
+	padding: 6px 12px;
+	background-color: #ffffff; 
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 0 none;
+}
+.sub:hover {
+	background-color: #ccc;
+}
