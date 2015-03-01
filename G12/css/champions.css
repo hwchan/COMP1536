@@ -23,7 +23,6 @@ html {
 		/* Creates a flex box to contain multiple .icon elements. */
 		display: flex;
 		flex-wrap: wrap;
-		width: 100%;
 	}
 		.icon {
 			/* Styles the container for each champions name icon and page link. */
@@ -38,11 +37,4 @@ html {
 hr {
 	/* Makes the HR white. */
 	border-color: white;
-	height: 1px;
 }
-	.hrsmall {
-		/* Taller, but lighter feeling hr element. */
-		margin-top: 50px;
-		margin-bottom: 50px;
-		width: 50%;
-	}
