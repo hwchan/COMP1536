@@ -3,7 +3,6 @@
 img.news {
 	float: left;
 	width: 50%;
-	height: 50%;
 }
 
 /* News header color, padding, and block color */
@@ -22,6 +21,10 @@ h2 {
 	margin-top: 15px;
 	box-shadow: 0px 0px 30px 1px #000000;
 	padding-bottom: 0;
+}
+
+.news-content{
+height: 100%;
 }
 
 /* News article paragraphs */

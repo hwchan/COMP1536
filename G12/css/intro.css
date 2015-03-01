@@ -31,16 +31,14 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
-/* Story paragraph; details a block of text over an image with a black overlay */
-.inner-content{
-	background-image: linear-gradient(rgba(0,0,0, 0.7) 50%,rgba(0,0,0, 0.7) 50%), url("../images/map.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	color: rgba(200,175,0,.8)
+/* Story video, a brief intro to league of legends */
+iframe {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border: 0;
 }
+
 
 /* Color, position, and appearance of the gameplay paragraphs */
 .inner-content2{
