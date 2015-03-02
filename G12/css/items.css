@@ -8,6 +8,15 @@
     border-radius: 5px;
     cursor:pointer;
 }
+#filter1 {
+	margin-left: 10px;
+}
+h3 {
+	color: #ffd251;
+}
+#filter2,#filter3 {
+	margin-left: 40px;
+}
 /*Arranges items in a grid*/
 .items{
     display: flex;

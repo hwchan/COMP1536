@@ -2,8 +2,10 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-//Toggle the registration inputs when done loading
-document.getElementsByTagName("body")[0].onload = function() {registerToggle()};
+//Toggle the registration inputs when ready
+$(function () {
+  registerToggle();
+})
 
 //Toggles the registration inputs
 function registerToggle(){
