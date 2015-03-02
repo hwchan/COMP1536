@@ -7,7 +7,7 @@ Q ad scaling(3) Q ap scaling(3) W cooldown(3) W base damage(3) W ad scaling (3) 
 E ap scaling(3) R cooldown(3) R base damage (3) R ad scaling (3) R ap scaling(3)
 */	
 	window.opener.document.getElementById("champbase").innerHTML="2292350100115776670493768085335120000000001400000000009000120100090000000000";
-	window.opener.document.getElementById("imgselect").src="http://a00928827.webege.com/G12/champions/_Tryndamere/images/Icon.png";
+	window.opener.document.getElementById("imgselect").src="champions/_Tryndamere/images/Icon.png";
 	window.opener.document.getElementById("SelfP").src="champions/_Tryndamere/images/P.png";
 	window.opener.document.getElementById("SelfQ").src="champions/_Tryndamere/images/Q.png";
 	window.opener.document.getElementById("SelfW").src="champions/_Tryndamere/images/W.png";
