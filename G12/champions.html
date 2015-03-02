@@ -20,7 +20,10 @@
 	
 
   </head>
-
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
   <body>
 	<div class="container">
 	<a href="index.html"><img alt="League of Legends logo" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
@@ -41,16 +44,42 @@
 					<li><a href="index.html">News</a></li>
 					<li><a href="intro.html">Intro</a></li>
 					<li>
-						<a href="" data-toggle="dropdown">Media<span class="caret"></span></a>
-						<ul class="dropdown-menu inverse-dropdown">
-							<li><a href="videos.html">Videos</a></li>
-							<li><a href="lcs.html">Pro teams</a></li>
-						</ul>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"videos.html\">Videos</a></li> \
+								<li><a href=\"lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="videos.html">Videos</a><br>
+								<a href="lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
 					</li>
 					<li class="active"><a href="champions.html">Champions</a></li>
 					<li><a href="items.html">Items</a></li>
 					<li><a href="calculator.html">Calculator</a></li>
-					<li><a href="#signin" data-toggle="modal" data-target="#signInModal">Sign in</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
 				</ul>
 			</div><!--/.nav-collapse -->
 
