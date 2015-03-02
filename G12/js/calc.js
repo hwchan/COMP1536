@@ -90,12 +90,7 @@ document.getElementById("calculatestats").onclick=function(){
 	document.getElementById("AAdps").innerHTML=AAdps;
 	var totaldps = AAdps+Qdps+Wdps+Edps+Rdps;
 	document.getElementById("totaldps").innerHTML=totaldps;
-	
-	function validateForm() {
-    if ( dmg == 0 ) {
-        alert("please select a champion");
-        return false;
-    }
+
 }
 
 
