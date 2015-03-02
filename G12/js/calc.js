@@ -103,13 +103,24 @@ document.getElementById("calculatestats").onclick=function(){
 }
 
 /* function for validating the form */
-/* will return false if damage is zero, but since a champion is selected by default, will always return true*/
+/* will ensure the user is inputing valid entries */
 function validateForm() {
-    if (dmg > 0) {
+	
+	var champions = ["TryndamereSelect" || "AnnieSelect" || "AmumuSelect" ]
+    if (champions == "TryndamereSelect" || champions == "AnnieSelect" || champions == "AmumuSelect" ) {
         return true;
     }
 	else {
 		alert("Please select a champion");
 		return false;
 	}
-}
+	
+var items = ["null" || "I1" || "I2" || "I3" || "I4" || "I5" || "I6" || "I7" || "I8" || "I9" || "I10"]
+	if (items == "null" || "I1" || "I2" || "I3" || "I4" || "I5" || "I6" || "I7" || "I8" || "I9" || "I10"){
+		return true;
+	}
+	else {
+		alert("That is not a valid input");
+		return false
+	}
+		}
