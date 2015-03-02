@@ -55,7 +55,15 @@ ul.nav.navbar-nav > li ~ li{
 		width: 107px;
 	}
 }
-.modal-open .modal,.btn:focus{outline:none;}
+/* Handle noscript styles */
+#noscript-signin{
+	height: 50px;
+	padding-top: 15px;
+}
+#noscript-media{
+	height: 50px;
+	padding-top: 5px;
+}
 
 
 /**********************
@@ -202,7 +210,7 @@ input {
 	display: none;
 	font-size: 10px;
 }
-
+.modal-open .modal,.btn:focus{outline:none;}
 
 
 /**********************
