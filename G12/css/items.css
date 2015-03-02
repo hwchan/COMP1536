@@ -35,6 +35,15 @@
 .sub:hover {
 	background-color: #ccc;
 }
+.drop {
+	color: black;
+	padding: 6px 12px;
+	background-color: #ffffff; 
+    cursor:pointer;	
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid #a1a1a1;
+}
 .popover.bottom {
   margin-top: 40px;
 }
