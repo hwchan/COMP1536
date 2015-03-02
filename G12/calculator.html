@@ -81,37 +81,39 @@
 					</div>
 				</div>
 				
-				<br><br>
+				<br><br id="champbase">
 				<div class="outcomebox">
                     <!--The compute outcome will be displayed here. Damage per hit is the damage it does in the normal sense.
                     Damage over time takes into consideration of the ability cooldown and attack speed (for auto-attack)-->
 					<div>
 						<img id="SelfP" alt="Passive" src="champions/_Tryndamere/images/P.png" height = "100" width = "100">
-						<br>Battle Fury:
-						<br>The damage per hit is x. 
-						<br>The damage per second is y.
+						<br><span id="passiveability">Battle Fury</span>:
+						<br>The damage per hit is 0. 
+						<br>The damage per second is 0.
 					</div>
 					<div>
 						<img id="SelfQ" alt="Qability" src="champions/_Tryndamere/images/Q.png" height = "100" width = "100">
-						<br>Bloodlust:
-						<br>The damage per hit is x. 
-						<br>The damage per second is y.
+						<br><span id="Qability">Bloodlust</span>:
+						<br>The damage per hit is <span id="Qdmg">0</span>. 
+						<br>The damage per second is <span id="Qdps">0</span>.
 					</div>
 					<div>
 						<img id="SelfW" alt="Wability" src="champions/_Tryndamere/images/W.png" height = "100" width = "100">
-						<br>Mocking Shout: <br>Damage per hit is x. <br> Damage per second is y.
+						<br><span id="Wability">Mocking Shout</span>: 
+						<br>Damage per hit is <span id="Wdmg">0</span>.
+						<br>Damage per second is <span id="Wdps">0</span>.
 					</div>
 					<div>
 						<img id="SelfE" alt="Eability" src="champions/_Tryndamere/images/E.png" height = "100" width = "100">
-						<br>Spinning Slash: 
-						<br>The damage per hit is x. 
-						<br>The damage per second is y.
+						<br><span id="Eability">Spinning Slash</span>: 
+						<br>The damage per hit is <span id="Edmg">0</span>. 
+						<br>The damage per second is <span id="Edps">0</span>.
 					</div>
 					<div>
 						<img id="SelfR" alt="Rability" src="champions/_Tryndamere/images/R.png" height = "100" width = "100">
-						<br>Undying Rage: 
-						<br>The damage per hit is x. 
-						<br>The damage per second is y.
+						<br><span id="Rability">Undying Rage</span>: 
+						<br>The damage per hit is <span id="Rdmg">0</span>. 
+						<br>The damage per second is <span id="Rdps">0</span>.
 					</div>
 				</div>
 				
@@ -120,11 +122,11 @@
                 and win the duel.-->
 				<button id="calculatestats">Calculate it now.</button><br id="stats1"><br id="stats2">
 				Your total combat stats are : <span id="damage">0</span> attack damage, <span id="critstrike">0</span>% critical strike, 
-				<span id="attackspeed">0</span>% attack speed, <span id="ap">0</span> ability power, <span id="cdr">0</span>% cool down reduction
+				<span id="attackspeed">0</span> attacks/sec, <span id="ap">0</span> ability power, <span id="cdr">0</span>% cool down reduction
 				,<span id="mana">0</span>mana, <span id="health">0</span> health, <span id="armour">0</span> armour, <span id="mres">0</span> magic resist.
 				<br id="stats3"><br id="stats4">
-				Your auto-attack damage per hit is x. Your auto-attack damage per second is y. <br id="stats5"><br id="stats6">
-				Your total health is w. Your combined damage per second is z. It is (un)favourable for you to fight this enemy.
+				Your auto-attack damage per second is <span id="AAdps">0</span>. <br id="stats5"><br id="stats6">
+				Your combined damage per second is <span id="totaldps">0</span>.
 				
 
 				
