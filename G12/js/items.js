@@ -9,10 +9,8 @@ function validateItemFilters(){
 	var filter3 = document.getElementById("filter3").value;	// FILTER 3
 	
 	if(validateFilter(filter1) && validateFilter(filter2) && validateFilter(filter3)){
-		alert("good");
 		return true;
 	}
-	alert(filter1 + " : " + filter2 + " : " + filter3);
 	return false;
 }
 
