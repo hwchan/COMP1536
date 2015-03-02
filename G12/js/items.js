@@ -1,6 +1,22 @@
-$(function () {
-  $('[data-toggle="popover"]').popover({ trigger: "hover" })
-})
+//$(function () {
+  //$('[data-toggle="popover"]').popover({ trigger: "hover" })
+//})
+
+// Adapted from http://stackoverflow.com/questions/13202762/html-inside-twitter-bootstrap-popover
+$(function(){
+    $("[data-toggle=popover]").popover({
+		trigger: "hover",
+        html : true,
+        content: function() {
+          var content = $(this).attr("data-popover-content");
+          return $(content).children(".popover-body").html();
+        },
+        title: function() {
+          var title = $(this).attr("data-popover-content");
+          return $(title).children(".popover-heading").html();
+        }
+    });
+});
 
 // Check all the filter inputs to see if they're valid
 function validateItemFilters(){
@@ -28,3 +44,5 @@ function validateFilter(input){
 	}
 	return false;
 }
+
+

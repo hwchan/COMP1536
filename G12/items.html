@@ -128,8 +128,28 @@
 
 			<div class="items">
 				<div class="item ad as">
-					<a data-toggle="popover" title="Blade of the Ruined King" data-content="Cost: 3200 gold | Unique Passive: Basic attacks deal 5% of the target's current Health in bonus physical damage on hit. | Unique Active: Deals 15% of the target champions maximum health, heals you the same amount, and slows the target by 30% for 3 seconds." data-placement="bottom">
-					<img alt="botrk" src="images/items/Blade_of_the_Ruined_King_item.png" height = "64" width = "64"></a></div>
+					<a data-placement="bottom" data-popover-content="#a1" data-toggle="popover" data-trigger="focus" href="#" tabindex="0">
+						<img alt="botrk" src="images/items/Blade_of_the_Ruined_King_item.png" height = "64" width = "64">
+					</a>
+				</div>
+					
+					<!-- SILLY MANJOT, LOOK AT THIS -->
+					<!-- http://stackoverflow.com/questions/13202762/html-inside-twitter-bootstrap-popover -->
+					
+					<!-- Content for Popover #1 -->
+					<div class="hidden" id="a1">
+						<div class="popover-heading">
+							Blade of the Ruined King
+						</div>
+
+						<div class="popover-body">
+							<p><strong>Cost:</strong> 3200 gold</p>  
+							<p><strong>Unique Passive:</strong> Basic attacks deal 5% of the target's current Health in bonus physical damage on hit.</p>
+							<p><strong>Unique Active:</strong> Deals 15% of the target champions maximum health, heals you the same amount, and slows the target by 30% for 3 seconds.</p>
+						</div>
+					</div>
+					<!-- END OF SILLY MANJOT -->
+					
 				<div class="item ad crit">
 					<a data-toggle="popover" title="Infinity Edge" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
 					<img alt="IE" src="images/items/Infinity_Edge_item.png" height = "64" width = "64"></a></div>
