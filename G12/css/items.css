@@ -2,7 +2,6 @@
 .items{
     display: flex;
     flex-wrap: wrap;
-	padding-left:40px;
 }
 .item {
 	margin-bottom: 24px;

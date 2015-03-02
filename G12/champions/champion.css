@@ -9,16 +9,9 @@ body {
 /*********************/
 /* Middle container  */
 /*********************/
-/* Delete this if the group is pissed */
-.background {
-	height: 100%;
-	padding: 30px;
-	background: rgba(0,0,0,.0);
-}
 /* Also delete this if the group is pissed */
 .middle-content {
 	background: rgba(28,28,28,.8);
-	padding: 0px;
 	color: white;
 }
 
@@ -27,15 +20,8 @@ body {
 /*********************/
 hr {
 	/* Gives the hr a black shadow as to make it stand out from the background*/
-	border-color: white;
 	background-color: black;
 	height: 2px;
-}
-.hrsmall {
-	/* Taller, but lighter feeling hr element. */
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 50%;
 }
 .flexbox {
 	display: flex;
