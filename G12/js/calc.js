@@ -105,6 +105,10 @@ document.getElementById("calculatestats").onclick=function(){
 /* will return false if damage is zero, but since a champion is selected by default, will always return true*/
 
 function validateForm() {
+	var dmg = 0;
+	for (i = 1; i < 7; i++) {
+		dmg += parseInt(document.getElementById("stats"+i).innerHTML.substring(0,2))
+	}
     if (dmg == 0) {
         alert("Please select a champion");
         return false;
