@@ -28,6 +28,7 @@ function registerToggle(){
 
 //Validates the sign in and register form
 function validateSignIn(){
+	var valid = true;
 	//EMAIL
 	var emailIn = document.forms["signIn"]["email"].value;
 	//Email must be in "chars@chars.chars"
@@ -41,7 +42,6 @@ function validateSignIn(){
 	
 	//PASSWORD
 	var passIn1 = document.forms["signIn"]["password1"].value;
-	var valid = true;
 	//Password must be at least 6 chars long
 	if(passIn1.match(/[a-zA-Z0-9]{6,}/) == null || passIn1 == null || passIn1 == ""){
 		document.getElementById("password1-star").innerHTML = "*Must be at least 6 alphanumeric characters long";
