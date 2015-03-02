@@ -34,7 +34,9 @@ html {
 /*********************/
 /* Generic           */
 /*********************/
-hr {
-	/* Makes the HR white. */
-	border-color: white;
+h2 {
+color: #ffd251;
+}
+h3, h4 {
+color: #0679BF;
 }

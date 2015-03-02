@@ -1,21 +1,19 @@
 #filter1,#filter2,#filter3 {
 	color: black;
 	background-color: #ffffff; 
-	margin-right: 24px;
+	margin-right: 40px;
 	margin-bottom: 24px;
 	padding: 7px 12px;
 	border: 2px solid #a1a1a1;
     border-radius: 5px;
     cursor:pointer;
 }
-#filter1 {
-	margin-left: 10px;
+
+h2 {
+color: #0679BF;
 }
 h3 {
-	color: #ffd251;
-}
-#filter2,#filter3 {
-	margin-left: 40px;
+color: #ffd251;
 }
 /*Arranges items in a grid*/
 .items{

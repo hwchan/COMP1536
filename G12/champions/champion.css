@@ -18,23 +18,15 @@ body {
 /*********************/
 /* Generic           */
 /*********************/
-hr {
-	/* Gives the hr a black shadow as to make it stand out from the background*/
-	background-color: black;
-	height: 2px;
-}
 .flexbox {
 	display: flex;
 }
-h2, h3, h4, p {
-	/* Gives the headers a black shadow as to make them stand out from the background*/
-	text-shadow: 0px 2px #000000;
+h2 {
+color: #ffd251;
 }
-p {
-	/* Gives the headers a black shadow as to make them stand out from the background*/
-	text-shadow: 0px 1px #000000;
+h3, h4 {
+color: #0679BF;
 }
-
 /*********************/
 /* First             */
 /*********************/
