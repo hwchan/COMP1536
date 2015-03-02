@@ -34,7 +34,8 @@
 .sub:hover {
 	background-color: #ccc;
 }
-.drop {
+
+#filter1,#filter2,#filter3 {
 	color: black;
 	padding: 6px 12px;
 	background-color: #ffffff; 
