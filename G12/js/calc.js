@@ -89,7 +89,14 @@ document.getElementById("calculatestats").onclick=function(){
 	var AAdps = dmg * (1+(crit+parseInt(document.getElementById("champbase").innerHTML.substring(4,6)))/100)*(parseInt(document.getElementById("champbase").innerHTML.substring(16,19))/1000*((parseInt(document.getElementById("champbase").innerHTML.substring(19,22))/10+atks)/100+1));
 	document.getElementById("AAdps").innerHTML=AAdps;
 	var totaldps = AAdps+Qdps+Wdps+Edps+Rdps;
-	document.getElementById("totaldps").innerHTML=totaldps;	
+	document.getElementById("totaldps").innerHTML=totaldps;
+	
+	function validateForm() {
+    if ( dmg == 0 ) {
+        alert("please select a champion");
+        return false;
+    }
+}
 
 
 
