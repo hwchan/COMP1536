@@ -1,3 +1,4 @@
+/* These calculate where the child window will spawn on the screen*/
 var w = window.innerWidth;
 var h = window.innerHeight;
 var d = document.getElementById("imgselect").offsetTop;
@@ -9,14 +10,20 @@ document.getElementById("item3").onclick=function(){window.open('ItemSelect.html
 document.getElementById("item4").onclick=function(){window.open('ItemSelect.html',"Item4","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
 document.getElementById("item5").onclick=function(){window.open('ItemSelect.html',"Item5","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
 document.getElementById("item6").onclick=function(){window.open('ItemSelect.html',"Item6","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+/* This is the part I hard code champion data. The textstring gives, in that order and number of digits: health(4) crit strike chance (4)/100%
+mana(4) damage (6)/1000 attackspeed(3)/1000 attackspeed increase%(3)/10 armour(5)/1000 magic resist(4)/100 Q cooldown (2) Q base damage(3)
+Q ad scaling(3) Q ap scaling(3) W cooldown(3) W base damage(3) W ad scaling (3) W ap scaling (3) E cooldown(3) E base damage (3) E ad scaling (3)
+E ap scaling(3) R cooldown(3) R base damage (3) R ad scaling (3) R ap scaling(3)
+*/
 document.getElementById("champbase").innerHTML="2292350100115776670493768085335120000000001400000000009000120100090000000000"
+/* This is the part I hard code item stats. The textstring gives, in that order, attack damage (2) critical strike chance (2)
+attackspeed (2) ability power (3) cooldown reduction (2) mana (3) hit points (3) armour (3) magic resistance (2) */
 document.getElementById("stats1").innerHTML="0000000000000000000000";
 document.getElementById("stats2").innerHTML="0000000000000000000000";
 document.getElementById("stats3").innerHTML="0000000000000000000000";
 document.getElementById("stats4").innerHTML="0000000000000000000000";
 document.getElementById("stats5").innerHTML="0000000000000000000000";
 document.getElementById("stats6").innerHTML="0000000000000000000000";
-document.getElementById("ttest").onclick=function(){document.getElementById("ttest").innerHTML="Yes"};
 document.getElementById("calculatestats").onclick=function(){
 	var dmg = 0;
 	for (i = 1; i < 7; i++) {
@@ -89,9 +96,7 @@ document.getElementById("calculatestats").onclick=function(){
 	var AAdps = dmg * (1+(crit+parseInt(document.getElementById("champbase").innerHTML.substring(4,6)))/100)*(parseInt(document.getElementById("champbase").innerHTML.substring(16,19))/1000*((parseInt(document.getElementById("champbase").innerHTML.substring(19,22))/10+atks)/100+1));
 	document.getElementById("AAdps").innerHTML=AAdps;
 	var totaldps = AAdps+Qdps+Wdps+Edps+Rdps;
-	document.getElementById("totaldps").innerHTML=totaldps;
-
-}
+	document.getElementById("totaldps").innerHTML=totaldps;	
 
 
 

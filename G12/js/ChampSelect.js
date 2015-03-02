@@ -1,4 +1,3 @@
-document.getElementById("etest").onclick = function(){ window.opener.document.getElementById("ttest").style.color="red"; self.close(); };
 document.getElementById("TryndamereSelect").onclick = function(){
 	self.close();
 /* This is the part I hard code champion data. The textstring gives, in that order and number of digits: health(4) crit strike chance (4)/100%
@@ -22,7 +21,7 @@ E ap scaling(3) R cooldown(3) R base damage (3) R ad scaling (3) R ap scaling(3)
 document.getElementById("AnnieSelect").onclick = function(){
 	self.close();
 	window.opener.document.getElementById("champbase").innerHTML="1804001184095035579231872203000042000000800825000008510060000020080425000080";
-	window.opener.document.getElementById("imgselect").src="http://a00928827.webege.com/G12/champions/_Annie/images/Icon.png";
+	window.opener.document.getElementById("imgselect").src="champions/_Annie/images/Icon.png";
 	window.opener.document.getElementById("SelfP").src="champions/_Annie/images/P.png";
 	window.opener.document.getElementById("SelfQ").src="champions/_Annie/images/Q.png";
 	window.opener.document.getElementById("SelfW").src="champions/_Annie/images/W.png";
@@ -37,7 +36,7 @@ document.getElementById("AnnieSelect").onclick = function(){
 document.getElementById("AmumuSelect").onclick = function(){
 	self.close();
 	window.opener.document.getElementById("champbase").innerHTML="2041000967117984638371796445335082800000700108400002006175000050110350000080";
-	window.opener.document.getElementById("imgselect").src="http://a00928827.webege.com/G12/champions/_Amumu/images/Icon.png";
+	window.opener.document.getElementById("imgselect").src="champions/_Amumu/images/Icon.png";
 	window.opener.document.getElementById("SelfP").src="champions/_Amumu/images/P.png";
 	window.opener.document.getElementById("SelfQ").src="champions/_Amumu/images/Q.png";
 	window.opener.document.getElementById("SelfW").src="champions/_Amumu/images/W.png";

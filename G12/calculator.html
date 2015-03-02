@@ -62,14 +62,14 @@
 				<div class = "champ-select">
 					<div>
                     <!--Click on the icon to select your champion. A pop-up should appear to let you select from 20+ champions.
-                        It is in the category of JS so the interactive part will be done in the next milestone.-->
-					<form name = "myForm" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit = "return validateFilter()" method = POST>
+						For milestone 4 we've only included 3 to show functionality. More will be included once we have access
+						to database.-->
 					<h4> Champion selection</h4>
 					<img id="imgselect" alt="IE" src="champions/_Tryndamere/images/Icon.png" height = "120" width = "120">
-					<p id="ttest">Original test</p>
 					</div>
 					<div>
-                    <!--Same with selecting item, right now they're not interactive-->
+                    <!--Click on any slot, 10 sample items will show up for selection. More will be available once we have
+						database-->
 					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select your items</h4>
 					<ul>
 						<li><img id="item1" alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
@@ -81,13 +81,15 @@
 					</ul>
 					</div>
 				</div>
-				
+
+                <!--Champbase is used to store values passed from the child window.-->
 				<br><br id="champbase">
 				<div class="outcomebox">
                     <!--The compute outcome will be displayed here. Damage per hit is the damage it does in the normal sense.
                     Damage over time takes into consideration of the ability cooldown and attack speed (for auto-attack)-->
 					<div>
 						<img id="SelfP" alt="Passive" src="champions/_Tryndamere/images/P.png" height = "100" width = "100">
+					<!-- passiveability lets us change the name of passive ability once a champ has been selected-->
 						<br><span id="passiveability">Battle Fury</span>:
 						<br>The damage per hit is 0. 
 						<br>The damage per second is 0.
@@ -95,6 +97,7 @@
 					<div>
 						<img id="SelfQ" alt="Qability" src="champions/_Tryndamere/images/Q.png" height = "100" width = "100">
 						<br><span id="Qability">Bloodlust</span>:
+					<!-- Qdmg displays the calculated damage per hit and Qdps is the damage per second-->
 						<br>The damage per hit is <span id="Qdmg">0</span>. 
 						<br>The damage per second is <span id="Qdps">0</span>.
 					</div>
@@ -118,24 +121,23 @@
 					</div>
 				</div>
 				
-                <!--A comparision between your health and enemy dps will be calculated to see how many seconds it takes
-                enemy to kill you and vice versa. This will return "favourable" if you can outlive your opponent
-                and win the duel.-->
+                <!--stats1 to stats 6 are used to hold item stats passed from child windows.-->
 				<button id="calculatestats">Calculate it now.</button><br id="stats1"><br id="stats2">
+				<!--these id's here display their respective values-->
 				Your total combat stats are : <span id="damage">0</span> attack damage, <span id="critstrike">0</span>% critical strike, 
 				<span id="attackspeed">0</span> attacks/sec, <span id="ap">0</span> ability power, <span id="cdr">0</span>% cool down reduction
 				,<span id="mana">0</span>mana, <span id="health">0</span> health, <span id="armour">0</span> armour, <span id="mres">0</span> magic resist.
 				<br id="stats3"><br id="stats4">
 				Your auto-attack damage per second is <span id="AAdps">0</span>. <br id="stats5"><br id="stats6">
 				Your combined damage per second is <span id="totaldps">0</span>.
-				</form>
+				
 
 				
 				<hr>
 				
 				<div class = "champ-select">
 					<div>
-                    <!--The same as above but this one deals with enemy champion and his items-->
+                    <!--Not put to work in this milestone yet. Explanation is given in the report-->
 					<h4> Please select enemy champion</h4>
 					<img alt="IE" src="champions/_Amumu/images/Icon.png" height = "120" width = "120">
 					</div>
@@ -213,50 +215,36 @@
 	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h1 id="signin-title">Sign in</h1>
-					</div>
+				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="POST">
 					<div class="modal-body">
-						<!-- Email -->
-						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
-						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<span class="modal-title">Email:</span><br>
+						<input type="email" placeholder="example@email.com" name="email" size="40" required>
 						<br>
-						<!-- Submit -->
-						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<input type="submit" class="btn btn-primary pull-right" value="Sign in">
 						<br>
-						<!-- Password -->
-						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
-						<input type="password" name="password1" size="40">
-						<!-- Register -->
-						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<span class="modal-title">Password:</span><br>
+						<input type="password" name="password1" size="40" required>
 						<br>
-						<!-- Forgot your password -->
 						<a href="#" class="small">Forgot your password?</a>
-						<!-- Hidden registration area -->
-						<div id="registerArea">
-							<hr class="hr-white">
-							<!-- Repeat password -->
-							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
-							<input type="password" name="password2" size="40">
-							<br>
-							<!-- Terms -->
-							<input type="checkbox" name="termsConditions">
-							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
-						</div>
+						<hr class="hr-white">
+						<span class="modal-title">Repeat password:</span><br>
+						<input type="password" name="password2" size="40">
+						<input type="submit" class="btn btn-primary pull-right" value="Register">
+						<br>
+						<input type="checkbox" name="termsConditions" value="true">
+						<span class="small">I accept the <a data-toggle="tooltip" data-placement="top" title="By accepting, you forfeit all your assets to us.">terms and conditions</a></span>
 					</div>
 				</form>
 			</div>
 		</div>
-	</div><!-- End of modal -->
+	</div>
 	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/base.js"></script>
 	<script src="js/calc.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--script src="js/ie10-viewport-bug-workaround.js"></script-->

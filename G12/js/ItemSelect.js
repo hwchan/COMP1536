@@ -1,3 +1,4 @@
+/*These will update the ability images in parent window and pass item stats back to parent window*/
 document.getElementById("I1").onclick = function(){ 
 	self.close();
 	window.opener.document.getElementById("item"+window.name.charAt(4)).src="images/items/Blade_of_the_Ruined_King_item.png";
