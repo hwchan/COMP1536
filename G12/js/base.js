@@ -2,20 +2,25 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+//Toggle the registration inputs when done loading
+document.getElementsByTagName("body")[0].onload = function() {registerToggle()};
+
 //Toggles the registration inputs
 function registerToggle(){
 	var display = document.getElementById("registerArea").style.display;
 	//Hide registration only div
-	if(display == "inline"){
+	if(display == "inline" || display == "" || display == null){
 		document.getElementById("registerArea").style.display = "none";
-		document.getElementById("submitButton").value = "Sign in";
+		//document.getElementById("submitButton").value = "Sign in";
 		document.getElementById("registerLink").innerHTML = "Register";
+		document.getElementById("signin-title").innerHTML = "Sign in";
 	}
 	//Show registration only div
 	else{
 		document.getElementById("registerArea").style.display = "inline";
-		document.getElementById("submitButton").value = "Register";
+		//document.getElementById("submitButton").value = "Register";
 		document.getElementById("registerLink").innerHTML = "Sign in";
+		document.getElementById("signin-title").innerHTML = "Register";
 	}
 }
 
@@ -23,28 +28,25 @@ function registerToggle(){
 function validateSignIn(){
 	//EMAIL
 	var emailIn = document.forms["signIn"]["email"].value;
-	//Email must be filled in
-    if(emailIn == null || emailIn == ""){
-        alert("Email must be filled in: " + emailIn);
-        return false;
-    }
 	//Email must be in "chars@chars.chars"
-	else if(emailIn.match(/\S+@\S+\.\S+/) == null){
-		alert("Email must be valid: " + emailIn);
-        return false;
+	if(emailIn.match(/\S+@\S+\.\S+/) == null || emailIn == null || emailIn == ""){
+		document.getElementById("email-star").innerHTML = "*Invalid email";
+		document.getElementById("email-star").style.display = "inline";
+        valid = false;
+	} else{
+		document.getElementById("email-star").style.display = "none";
 	}
 	
 	//PASSWORD
 	var passIn1 = document.forms["signIn"]["password1"].value;
-	//Password must be filled in
-	if(passIn1 == null || passIn1 == ""){
-		alert("Password must be filled in: " + passIn1);
-		return false;
-	}
+	var valid = true;
 	//Password must be at least 6 chars long
-	else if(passIn1.length < 6){
-		alert("Password must be at least 6 characters long: " + passIn1);
-		return false;
+	if(passIn1.match(/[a-zA-Z0-9]{6,}/) == null || passIn1 == null || passIn1 == ""){
+		document.getElementById("password1-star").innerHTML = "*Must be at least 6 alphanumeric characters long";
+		document.getElementById("password1-star").style.display = "inline";
+		valid = false;
+	} else{
+		document.getElementById("password1-star").style.display = "none";
 	}
 	
 	//REPEAT PASSWORD
@@ -53,13 +55,18 @@ function validateSignIn(){
 	if(passIn2 != null && passIn2 != ""){
 		//password1 should be the same as password2
 		if(passIn1 != passIn2){
-			alert(passIn1 + " : " + passIn2);
-			return false;
+			document.getElementById("password2-star").innerHTML = "*Passwords do not match";
+			document.getElementById("password2-star").style.display = "inline";
+			valid = false;
 		}
 		//Terms must be accepted
 		else if(!document.forms["signIn"]["termsConditions"].checked){
-			alert("Accept terms");
-			return false;
+			document.getElementById("terms-star").innerHTML = "*Please accept the Terms & Conditions";
+			document.getElementById("terms-star").style.display = "inline";
+			valid = false;
+		} else{
+			document.getElementById("terms-star").style.display = "none";
 		}
 	}
+	return valid;
 }

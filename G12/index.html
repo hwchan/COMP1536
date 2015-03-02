@@ -21,6 +21,10 @@
   </head>
 
   <body>
+  <!-- Display a warning for disabled Javascript -->
+  <noscript>
+	<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+  </noscript>
 	<div class="container">
 	<a href="index.html"><img alt="League of Legends logo" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
 	
@@ -40,11 +44,21 @@
 					<li class="active" ><a href="index.html">News</a></li>
 					<li><a href="intro.html">Intro</a></li>
 					<li>
-						<a href="" data-toggle="dropdown">Media<span class="caret"></span></a>
-						<ul class="dropdown-menu inverse-dropdown">
-							<li><a href="videos.html">Videos</a></li>
-							<li><a href="lcs.html">Pro teams</a></li>
-						</ul>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"videos.html\">Videos</a></li> \
+								<li><a href=\"lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						<noscript>
+							<a href="videos.html">Videos</a><br>
+							<a href="lcs.html">Pro teams</a>
+						</noscript>
 					</li>
 					<li><a href="champions.html">Champions</a></li>
 					<li><a href="items.html">Items</a></li>
@@ -171,31 +185,42 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
-					<div class="modal-body">
+					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<span class="modal-title">Email:</span><br>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
 						<input type="text" placeholder="example@email.com" name="email" size="40">
 						<br>
-						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Sign in">
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
 						<br>
-						<span class="modal-title">Password:</span><br>
-						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
 						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
 						<br>
+						<!-- Forgot your password -->
 						<a href="#" class="small">Forgot your password?</a>
-						<div id="registerArea" style="display:none">
+						<!-- Hidden registration area -->
+						<div id="registerArea">
 							<hr class="hr-white">
-							<span class="modal-title">Repeat password:</span><br>
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
 							<input type="password" name="password2" size="40">
 							<br>
+							<!-- Terms -->
 							<input type="checkbox" name="termsConditions" value="false">
-							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a></span>
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
-	</div>
+	</div><!-- End of modal -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
