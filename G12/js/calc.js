@@ -97,30 +97,4 @@ document.getElementById("calculatestats").onclick=function(){
 	document.getElementById("AAdps").innerHTML=AAdps;
 	var totaldps = AAdps+Qdps+Wdps+Edps+Rdps;
 	document.getElementById("totaldps").innerHTML=totaldps;	
-
-
-	
 }
-
-/* function for validating the form */
-/* will ensure the user is inputing valid entries */
-function validateForm() {
-	
-	var champions = ["TryndamereSelect" || "AnnieSelect" || "AmumuSelect" ]
-    if (champions == "TryndamereSelect" || champions == "AnnieSelect" || champions == "AmumuSelect" ) {
-        return true;
-    }
-	else {
-		alert("Please select a champion");
-		return false;
-	}
-	
-var items = ["null" || "I1" || "I2" || "I3" || "I4" || "I5" || "I6" || "I7" || "I8" || "I9" || "I10"]
-	if (items == "null" || "I1" || "I2" || "I3" || "I4" || "I5" || "I6" || "I7" || "I8" || "I9" || "I10"){
-		return true;
-	}
-	else {
-		alert("That is not a valid input");
-		return false
-	}
-		}
