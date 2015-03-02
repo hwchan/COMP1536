@@ -31,3 +31,12 @@ margin: 1em;
     display: flex;
     flex-wrap: wrap;
 }
+
+#calculatestats{
+background-color: rgba(63,0,255,0.5);
+color: yellow;
+border: 0px;
+font-size: 110%;
+padding: 1%;
+margin: 10px;
+}
