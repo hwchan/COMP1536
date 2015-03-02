@@ -59,10 +59,11 @@
 		  <div class="middle-container">
 			<h1><span class="h1-capital">I</span>TEMS</h1>
 			<div class="middle-content">
+                <h2> Items </h2>
                 <p> Items are objects that your champion can carry in order to boost their attributes ingame. A champion can only carry six items and a Trinket at a time, which makes the selection of items more meaningful. Items can be bought in game from your teams corresponding shop located at the spawn patform.</p>
-                <hr class="hr-white">
 				<h3> Filters </h3>
-				<p> Here you can use a set of filters to choose which items you want to be shown based on which stats they provide. </p>
+				<p> Here you can use a set of three dropdown menus to filter the items bellow based on the stats that they provide to your character. </p>
+				<hr class="hr-white">
 				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="POST" onclick="setDisplayed()"onsubmit="validateItemFilters()">
 					<div class="btn-group">
 					<select size="1" name="Filter_1" id="filter1">
@@ -114,12 +115,7 @@
 					  <option value="mr">Magic Resist</option>
 					</select>
 					</div>
-
-					<div class="btn-group">
-						<input type="submit" class="sub">
-					</div>
 				</form>
-				<br>
             <!--This part is where the items will show up after the filters. Right now the icons do nothing but
                 for the next milestone JS will be programmed into them so we can have a mouseover effect and it'll
                 display individual item's stats-->
