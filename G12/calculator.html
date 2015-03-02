@@ -22,7 +22,6 @@
   </head>
 
   <body>
-  <form action="" method="">
 	<div class="container">
 	<a href="index.html"><img alt="League of Legends logo" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
 	
@@ -61,36 +60,23 @@
 			<h1><span class="h1-capital">C</span>ALCULATOR</h1>
 			<div class="middle-content">
 				<div class = "champ-select">
-					<div class = "champions">
+					<div>
                     <!--Click on the icon to select your champion. A pop-up should appear to let you select from 20+ champions.
                         It is in the category of JS so the interactive part will be done in the next milestone.-->
 					<h4> Champion selection</h4>
-					<button onclick="myFunction()">
-					<img alt="IE" src="champions/_Tryndamere/images/Icon.png" height = "120" width = "120">
-					</button>
+					<img id="imgselect" alt="IE" src="champions/_Tryndamere/images/Icon.png" height = "120" width = "120">
+					<p id="ttest">Original test</p>
 					</div>
-					<div class = "items">
+					<div>
                     <!--Same with selecting item, right now they're not interactive-->
 					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select your items</h4>
 					<ul>
-											<button onclick="myFunction2()">
-						<li><img alt="IE" src="images/items/Blade_of_the_Ruined_King_item.png" height = "100" width = "100"></li>
-						</button>
-												<button onclick="myFunction2()">
-						<li><img alt="IE" src="images/items/Infinity_Edge_item.png" height = "100" width = "100"></li>
-						</button>
-												<button onclick="myFunction2()">
-						<li><img alt="IE" src="images/items/Berserker's_Greaves_item.png" height = "100" width = "100"></li>
-						</button>
-												<button onclick="myFunction2()">
-						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
-						</button>
-												<button onclick="myFunction2()">
-						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
-						</button>
-												<button onclick="myFunction2()">
-						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
-						</button>
+						<li><img id="item1" alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						<li><img id="item2" alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						<li><img id="item3" alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						<li><img id="item4" alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						<li><img id="item5" alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
+						<li><img id="item6" alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
 					</ul>
 					</div>
 				</div>
@@ -99,103 +85,66 @@
 				<div class="outcomebox">
                     <!--The compute outcome will be displayed here. Damage per hit is the damage it does in the normal sense.
                     Damage over time takes into consideration of the ability cooldown and attack speed (for auto-attack)-->
-					<div class="ability">
-						<img alt="TryndamerePassive" src="champions/_Tryndamere/images/P.png" height = "100" width = "100">
-						<h4>
-						Battle Fury:
-						</h4>
-						<p>
-						The damage per hit is x. 
-						<br>
-						The damage per second is y.
-						</p>
+					<div>
+						<img id="SelfP" alt="Passive" src="champions/_Tryndamere/images/P.png" height = "100" width = "100">
+						<br>Battle Fury:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
 					</div>
-					<div class="ability">
-						<img alt="TryndamereQ" src="champions/_Tryndamere/images/Q.png" height = "100" width = "100">
-						<h4>
-						Bloodlust:
-						</h4>
-						<p>
-						The damage per hit is x. 
-						<br>
-						The damage per second is y.
-						</p>
+					<div>
+						<img id="SelfQ" alt="Qability" src="champions/_Tryndamere/images/Q.png" height = "100" width = "100">
+						<br>Bloodlust:
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
 					</div>
-					<div class="ability">
-						<img alt="TryndamereW" src="champions/_Tryndamere/images/W.png" height = "100" width = "100">
-						<h4>
-						Mocking Shout:
-						</h4>
-						<p>
-						The damage per hit is x. 
-						<br>
-						The damage per second is y.
-						</p>
+					<div>
+						<img id="SelfW" alt="Wability" src="champions/_Tryndamere/images/W.png" height = "100" width = "100">
+						<br>Mocking Shout: <br>Damage per hit is x. <br> Damage per second is y.
 					</div>
-					<div class="ability">
-						<img alt="TryndamereE" src="champions/_Tryndamere/images/E.png" height = "100" width = "100">
-						<h4>
-						Spinning Slash:
-						</h4>
-						<p>
-						The damage per hit is x. 
-						<br>
-						The damage per second is y.
-						</p>
+					<div>
+						<img id="SelfE" alt="Eability" src="champions/_Tryndamere/images/E.png" height = "100" width = "100">
+						<br>Spinning Slash: 
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
 					</div>
-					<div class="ability">
-						<img alt="TryndamereR" src="champions/_Tryndamere/images/R.png" height = "100" width = "100">
-						<h4>
-						Undying Rage:
-						</h4>
-						<p>
-						The damage per hit is x. 
-						<br>
-						The damage per second is y.
-						</p>
+					<div>
+						<img id="SelfR" alt="Rability" src="champions/_Tryndamere/images/R.png" height = "100" width = "100">
+						<br>Undying Rage: 
+						<br>The damage per hit is x. 
+						<br>The damage per second is y.
 					</div>
 				</div>
 				
                 <!--A comparision between your health and enemy dps will be calculated to see how many seconds it takes
                 enemy to kill you and vice versa. This will return "favourable" if you can outlive your opponent
                 and win the duel.-->
-						<input type="submit" value="Calculate">
-				<p>Your auto-attack damage per hit is x. Your auto-attack damage per second is y.<p> <br>
-				<p>Your total health is w. Your combined damage per second is z. It is (un)favourable for you to fight this enemy.<p>
+				<button id="calculatestats">Calculate it now.</button><br id="stats1"><br id="stats2">
+				Your total combat stats are : <span id="damage">0</span> attack damage, <span id="critstrike">0</span>% critical strike, 
+				<span id="attackspeed">0</span>% attack speed, <span id="ap">0</span> ability power, <span id="cdr">0</span>% cool down reduction
+				,<span id="mana">0</span>mana, <span id="health">0</span> health, <span id="armour">0</span> armour, <span id="mres">0</span> magic resist.
+				<br id="stats3"><br id="stats4">
+				Your auto-attack damage per hit is x. Your auto-attack damage per second is y. <br id="stats5"><br id="stats6">
+				Your total health is w. Your combined damage per second is z. It is (un)favourable for you to fight this enemy.
 				
 
 				
 				<hr>
 				
 				<div class = "champ-select">
-					<div class = "champion">
+					<div>
                     <!--The same as above but this one deals with enemy champion and his items-->
 					<h4> Please select enemy champion</h4>
-										<button onclick="myFunction()">
 					<img alt="IE" src="champions/_Amumu/images/Icon.png" height = "120" width = "120">
-					</button>
 					</div>
-					<div class = "items">
+					<div>
 					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select enemy items</h4>
 					<ul>
-										<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Frozen_Heart_item.png" height = "100" width = "100"></li>
-						</button>
-												<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Randuin's_Omen_item.png" height = "100" width = "100"></li>
-						</button>
-						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Ninja_Tabi_item.png" height = "100" width = "100"></li>
-						</button>
-						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/Abyssal_Scepter_item.png" height = "100" width = "100"></li>
-						</button>
-						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
-						</button>
-						<button onclick="myFunction2()">
 						<li><img alt="IE" src="images/items/EmptyIcon_item.png" height = "100" width = "100"></li>
-						</button>
 					</ul>
                     </div>
 				</div>
@@ -233,9 +182,8 @@
 						<br>The damage per second is y.
 					</div>					
 				</div>
-						<input type="submit" value="Calculate">
-				<p>Your auto-attack damage per hit is x. Your auto-attack per second is y.<p><br>
-				<p>Your total health is w. Your combined damage per second is: z<p>
+				Your auto-attack damage per hit is x. Your auto-attack per second is y. <br><br>
+				Your total health is w. Your combined damage per second is: z
 
             </div>
 			
@@ -292,16 +240,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/calc.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
-	<script>
-	function myFunction(){
-	    window.open("champions.html");
-		}
-	function myFunction2(){
-	window.open("items.html");
-	}
-		</script>
-</form>
   </body>
 </html>
