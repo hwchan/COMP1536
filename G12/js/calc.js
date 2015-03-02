@@ -101,15 +101,15 @@ document.getElementById("calculatestats").onclick=function(){
 
 	
 }
+
 /* function for validating the form */
 /* will return false if damage is zero, but since a champion is selected by default, will always return true*/
-
 function validateForm() {
-    if (dmg == 0) {
-        alert("Please select a champion");
-        return false;
+    if (dmg > 0) {
+        return true;
     }
 	else {
-		return true
+		alert("Please select a champion");
+		return false;
 	}
 }
