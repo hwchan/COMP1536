@@ -18,6 +18,18 @@ $(function(){
     });
 });
 
+function setDisplayed(){
+	var filter1 = document.getElementById("filter1").value;	// FILTER 1
+	var filter2 = document.getElementById("filter2").value;	// FILTER 2
+	var filter3 = document.getElementById("filter3").value;	// FILTER 3
+	$(".item").show()
+	$(".item:not(."+filter1+")").hide()
+	$(".item:not(."+filter2+")").hide()
+	$(".item:not(."+filter3+")").hide()
+}
+
+
+
 // Check all the filter inputs to see if they're valid
 function validateItemFilters(){
 	var filter1 = document.getElementById("filter1").value;	// FILTER 1
