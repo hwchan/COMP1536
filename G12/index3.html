@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+    <link rel="icon" href="images/icon.png">
+
+    <title>News</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Base style -->
+    <link href="css/base.css" rel="stylesheet">
+	<!-- Custom page style -->
+	<link href="css/index.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <!-- Display a warning for disabled Javascript -->
+  <noscript>
+	<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+  </noscript>
+	<div class="container">
+	<a href="index.html"><img alt="League of Legends logo" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active" ><a href="index.html">News</a></li>
+					<li><a href="intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"videos.html\">Videos</a></li> \
+								<li><a href=\"lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="videos.html">Videos</a><br>
+								<a href="lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li><a href="champions.html">Champions</a></li>
+					<li><a href="items.html">Items</a></li>
+					<li><a href="calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		<!-- Page heading -->
+		<div class="middle-container">
+				<h1><span class="h1-capital">N</span>EWS</h1>
+				<!-- End of page heading -->
+				
+				<!-- News articles are taken from the League of Legends website --!>
+			<div class="middle-content">
+				
+				<!-- First news article -->
+				<div class="news-content">
+				<h2>El Tigre Braum powerbombs into League</h2>
+				<img alt="News page" class = "news" src="images/News11.jpg" >
+					<div class="inner-content">
+						<p>He’s the greatest luchador ever to enter the ring. He shatters turnbuckles with his Moustachebombs. He knocks out rudos with his panthera jabs. He partners with poros for his tag team matches. Ladies and gentlemen, the man with the heart of a tiger, El Tigre Braum!</p>
+						<p>Suplex your enemies with El Tigre Braum, available now in the League of Legends store for 1350 RP (on sale for 975 RP until 23:59 PST on January 25). </p>
+						<p>January 2015</p>
+					</div>
+				</div>
+					<!-- End of first news article -->
+				<hr>
+				
+				<!-- Second news article -->
+				<div class="news-content">
+				<h2>Worlds 2015 to be held in Europe</h2>
+				<img alt="News page" class = "news" src="images/News12.jpg">
+					<div class="inner-content">
+						<p>After sharing a memorable 2014 Championship with truly incredible esports fans in Taipei, Singapore and Korea, we’re looking forward to 2015’s final showdown more than ever. Today, before the LCS season kickoff, we’re excited to announce that the 2015 World Championship will be coming to Europe this October.</p>
+						<p>It’s still too early to share exact details -- we're currently confirming venues, timing, format, and more - and we’ll be sharing those details in the next few months. In the meantime, tune in to cheer on your favorite LCS teams this week as they take their first steps towards Worlds 2015.</p>
+						<p>January 2015</p>
+					</div>
+				</div>
+					<!-- End of second news article -->
+					
+				<hr>
+				
+				<!-- Third news article -->
+				<div class="news-content">
+				<h2>Rally Your College for the 2015 NACC!</h2>
+				<img alt="News page" class = "news" src="images/News13.jpg">
+					<div class="inner-content">
+						<p>Studying. Long nights. Hard work. Caffeine.
+						<p>We’re not talking about finals. We’re talking about what it takes to be the best on the Rift. To be the best college team on your campus, your region, and maybe even all of North America.</p>
+						<p>Now it's your chance to show everyone what you’ve got! Grab some friends, rally a team, and have some fun competing in the 2015 North American Collegiate Championships.</p>
+						<p>January 2015</p>
+					</div>
+				</div>
+					<!-- End of third news article -->
+					
+				<hr>
+				
+				<!-- Fourth news article -->
+				<div class="news-content">
+				<h2>Get ready for the 2015 ranked season!</h2>
+				<img alt="News page" class = "news" src="images/News14.jpg">
+					<div class="inner-content">
+						<p>It’s time to slim back down to fighting weight and pull those tryhard pants on, because on January 21 we’re opening up the 2015 ranked season! If you’ve spent the holidays hiding under a large rock, then you’ve only got a few days to catch up on the latest updates and get prepared for the 2015 season! </p>
+						<p>We’ll have more information as the season progresses, but there will definitely be a victorious skin, and you’ll unlock unique wards as you play ranked 5s!</p>
+						<p>That’s it for now! We’ll have more updates as the season develops, but for now, get practicing, because ranked is coming up FAST!</p>
+						<p>January 2015</p>
+					</div>
+				</div>
+					<!-- End of third news article -->
+					
+				<hr>
+				
+				<!-- Fifth news article -->
+				<div class="news-content">
+				<h2>Champion Update: Alistar</h2>
+				<img alt="News page" class = "news" src="images/News15.jpg">
+					<div class="inner-content">
+						<p>The champion update guys had a closer look at Alistar and decided it was time for a brush up! We’ve just finished shampooing and shearing, clipping and steering him through the champ-up workshop, and he’s finally ready to stampede with style.</p>
+						<p> Now Alistar will cycle through different run types as he speeds up and slows down, and you’ll actually see him trampling enemies with his passive! You still can’t milk those, though.</p>
+						<p>January 2015</p>
+					</div>
+				</div>
+				<hr><!-- End of third news article -->
+					
+				<!-- Page navigation bar -->
+				<nav class="text-center">
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="index.html">1</a></li>
+						<li><a href="index2.html">2</a></li>
+						<li><a href="index3.html">3</a></li>
+						<li><a href="index4.html">4</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+					
+			</div><!-- End of middle content -->
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					Group 12: hwc, mk, mdl, plm, bw
+					<br>
+					<a href="mailto:someone@example.com">someone@example.com</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+	</div><!-- End of middle container -->
+	
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="email" placeholder="example@email.com" name="email" size="40" required>
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40" required>
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+
+  </body>
+</html>

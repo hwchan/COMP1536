@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+    <link rel="icon" href="images/icon.png">
+
+    <title>News</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Base style -->
+    <link href="css/base.css" rel="stylesheet">
+	<!-- Custom page style -->
+	<link href="css/index.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <!-- Display a warning for disabled Javascript -->
+  <noscript>
+	<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+  </noscript>
+	<div class="container">
+	<a href="index.html"><img alt="League of Legends logo" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active" ><a href="index.html">News</a></li>
+					<li><a href="intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"videos.html\">Videos</a></li> \
+								<li><a href=\"lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="videos.html">Videos</a><br>
+								<a href="lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li><a href="champions.html">Champions</a></li>
+					<li><a href="items.html">Items</a></li>
+					<li><a href="calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		<!-- Page heading -->
+		<div class="middle-container">
+				<h1><span class="h1-capital">N</span>EWS</h1>
+				<!-- End of page heading -->
+				
+				<!-- News articles are taken from the League of Legends website --!>
+			<div class="middle-content">
+				
+				<!-- First news article -->
+				<div class="news-content">
+				<h2>Team up and earn Party Rewards!</h2>
+				<img alt="News page" class = "news" src="images/News6.jpg" >
+					<div class="inner-content">
+						<p>We all know playing with friends makes for a more friendly League, so we’re sweetening the pot for teaming up. For the next two weeks, queue up with friends both new and old to rack up IP with Party Rewards. The new system awards bonus multipliers based on the size of your premade party. In this trial period, we’ll look to see if features like this one can give you more opportunities to crack nexii with friends and make for positive games.</p>					</div>
+						<p>February 2015</p>
+				</div>
+					<!-- End of first news article -->
+				<hr>
+				
+				<!-- Second news article -->
+				<div class="news-content">
+				<h2>Thw 2015 mid-season</h2>
+				<img alt="News page" class = "news" src="images/News7.jpg">
+					<div class="inner-content">
+						<p>Featuring the regional champions from around the world, this tournament offers a brand new opportunity to see the best of the best from international leagues square off. Five participating teams are chosen by winning their split playoffs in the EU LCS, LCK, LMS, LPL, and NA LCS. The sixth and final spot will go to the winner of the International Wild Card Invitational (IWCI), another new event to be held in Istanbul, Turkey, in late April.</p>
+						<p>February 2015</p>
+					</div>
+				</div>
+					<!-- End of second news article -->
+					
+				<hr>
+				
+				<!-- Third news article -->
+				<div class="news-content">
+				<h2>New Champion revealed!</h2>
+				<img alt="News page" class = "news" src="images/News8.jpg">
+					<div class="inner-content">
+						<p>The celestial vagabond known only as Bard, the Wandering Caretaker, dwells beyond the physical universe in realms unknown to man. Manifesting when others threaten the cosmic equilibrium, the ancient caretaker acts with speed and intent, only returning to his endless watch once he has steered Runeterra from catastrophe. He is unique from all other champions, and has all new abilities, strengths, and weaknesses. If you feel bold, try him out and go out of your comfort zone.</p>
+						<p>February 2015</p>
+					</div>
+				</div>
+					<!-- End of third news article -->
+					
+				<hr>
+				
+				<!-- Fourth news article -->
+				<div class="news-content">
+				<h2>Upcoming Refer-a-Friend downtime</h2>
+				<img alt="News page" class = "news" src="images/News9.jpg">
+					<div class="inner-content">
+						<p>We recently shared our plans to update the Refer-a-Friend program to better serve players bringing allies into League of Legends. We’ll be taking the current RAF program down for the transition. The downtime may last a few days, during which time we’ll transfer players to the new program, including handing out any new rewards earned as a result of previous referrals. </p>
+						<p>We’re excited to launch the update to the Refer-a-Friend program—thanks for your patience as we implement all of the changes!</p>					</div>
+						<p>February 2015</p>
+				</div>
+					<!-- End of third news article -->
+					
+				<hr>
+				
+				<!-- Fifth news article -->
+				<div class="news-content">
+				<h2>Kick off the 2015 season with LCS team icons!</h2>
+				<img alt="News page" class = "news" src="images/News10.jpg">
+					<div class="inner-content">
+						<p>The 2015 season is underway as NA and EU LCS teams begin their journey towards the next World Championship. And to kick things off, we’re releasing the 2015 LCS team icons for 250 RP each. Support your favorite squad all season long!</p>
+						<p>If you love all teams equally, or just can’t pick a favorite, we’ve got you covered. Grab all ten EU LCS team icons in bundled form for 2000 RP, or nine NA icons together for 1800 RP. Team Gravity finalized their logo a bit late so we’ll release theirs separately later on. These bundles will be available from now until 23:59 on February 12.</p>
+						<p>February 2015</p>
+					</div>
+				</div>
+				<hr><!-- End of third news article -->
+					
+				<!-- Page navigation bar -->
+				<nav class="text-center">
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="index.html">1</a></li>
+						<li><a href="index2.html">2</a></li>
+						<li><a href="index3.html">3</a></li>
+						<li><a href="index4.html">4</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+					
+			</div><!-- End of middle content -->
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					Group 12: hwc, mk, mdl, plm, bw
+					<br>
+					<a href="mailto:someone@example.com">someone@example.com</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+	</div><!-- End of middle container -->
+	
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="email" placeholder="example@email.com" name="email" size="40" required>
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40" required>
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+
+  </body>
+</html>

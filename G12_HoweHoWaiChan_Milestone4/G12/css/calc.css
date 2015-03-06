@@ -1,0 +1,45 @@
+/*This creates the top row of flexbox
+    ,with champion and item selection*/
+.champ-select{    
+	width: auto;
+	min-width: 550px;
+    height: 220px;
+    border: none;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+.champ-select ul{list-style-type:none}
+
+.champ-select ul li {display:inline}
+
+/* This further specifies the flexbox size*/
+.champ-select div{
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+	width = 200px;		
+}
+
+/*This one gives the damage for each
+    individual ability*/
+.outcomebox{
+    width: auto;
+    height: 200px;
+    border: none;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+.outcomebox div{
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+}
+#calculatestats{
+background-color: rgba(63,0,255,0.5);
+color: yellow;
+border: 0px;
+font-size: 110%;
+padding: 1%;
+margin: 10px;
+}

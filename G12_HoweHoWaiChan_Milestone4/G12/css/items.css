@@ -1,0 +1,46 @@
+#filter1,#filter2,#filter3 {
+	color: black;
+	background-color: #ffffff; 
+	margin-right: 40px;
+	margin-bottom: 24px;
+	padding: 7px 12px;
+	border: 2px solid #a1a1a1;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+h2 {
+color: #0679BF;
+}
+h3 {
+color: #ffd251;
+}
+/*Arranges items in a grid*/
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+	margin-bottom: 24px;
+	margin-right: 24px;
+	border: 2px solid #a1a1a1;
+	border-radius: 5px;
+}
+
+.popover {
+	color:black;
+	background-color: rgba(255, 255,255, .9);
+}
+.popover-title {
+	background-color: #ffffff;
+	color:#12313D;
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+}
+.popover-content {
+	margin-top: -5px;
+}
+.popover.bottom {
+  margin-top: 40px;
+}

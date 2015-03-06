@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+    <link rel="icon" href="images/icon.png">
+
+    <title>Items</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <!-- Base style -->
+    <link href="css/base.css" rel="stylesheet">
+	<!-- Custom page style -->
+    <link href="css/items.css" rel="stylesheet">
+
+  </head>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+  <body>
+	<div class="container">
+	<a href="index.html"><img alt="League of Legends logo" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">News</a></li>
+					<li><a href="intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"videos.html\">Videos</a></li> \
+								<li><a href=\"lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="videos.html">Videos</a><br>
+								<a href="lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li><a href="champions.html">Champions</a></li>
+					<li class="active"><a href="items.html">Items</a></li>
+					<li><a href="calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+
+		  <div class="middle-container">
+			<h1><span class="h1-capital">I</span>TEMS</h1>
+			<div class="middle-content">
+                <p> Items are objects that your champion can carry in order to boost their attributes ingame. A champion can only carry six items and a Trinket at a time, which makes the selection of items more meaningful. Items can be bought in game from your teams corresponding shop located at the spawn patform.</p>
+                <hr class="hr">
+				<h3> Filters </h3>
+				<p> Here you can use a set of three dropdown menus to filter the items bellow based on the stats that they provide to your character. </p>
+				
+				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="POST" onclick="setDisplayed()"onsubmit="validateItemFilters()">
+					<div class="btn-group">
+					<select size="1" name="Filter_1" id="filter1">
+					  <option value="item">Filter</option>
+					  <option value="ad">Attack Damage</option>
+					  <option value="crit">Critical Strike</option>
+					  <option value="as">Attack Speed</option>
+					  
+					  <option value="ap">Ability Power</option>
+					  <option value="cdr">Cooldown Reduction</option>
+					  <option value="mp">Mana</option>
+
+					  <option value="hp">Health</option>
+					  <option value="ar">Armor</option>
+					  <option value="mr">Magic Resist</option>
+					</select>
+					</div>
+						
+					<div class="btn-group">
+					<select size="1" name="Filter_2" id="filter2">
+					  <option value="item">Filter</option>
+					  <option value="ad">Attack Damage</option>
+					  <option value="crit">Critical Strike</option>
+					  <option value="as">Attack Speed</option>
+
+					  <option value="ap">Ability Power</option>
+					  <option value="cdr">Cooldown Reduction</option>
+					  <option value="mp">Mana</option>
+
+					  <option value="hp">Health</option>
+					  <option value="ar">Armor</option>
+					  <option value="mr">Magic Resist</option>
+					</select>
+					</div>
+						
+					<div class="btn-group">
+					<select size="1" name="Filter_3" id="filter3">
+					  <option value="item">Filter</option>
+					  <option value="ad">Attack Damage</option>
+					  <option value="crit">Critical Strike</option>
+					  <option value="as">Attack Speed</option>
+
+					  <option value="ap">Ability Power</option>
+					  <option value="cdr">Cooldown Reduction</option>
+					  <option value="mp">Mana</option>
+
+					  <option value="hp">Health</option>
+					  <option value="ar">Armor</option>
+					  <option value="mr">Magic Resist</option>
+					</select>
+					</div>
+				</form>
+            <!--This part is where the items will show up after the filters. Right now the icons do nothing but
+                for the next milestone JS will be programmed into them so we can have a mouseover effect and it'll
+                display individual item's stats-->
+
+			<div class="items">
+				<div class="item ad as">
+					<a data-placement="bottom" data-popover-content="#a1" data-toggle="popover" data-trigger="focus" tabindex="0">
+						<img alt="botrk" src="images/items/Blade_of_the_Ruined_King_item.png" height = "64" width = "64">
+					</a>
+				</div>
+					
+					<!-- SILLY MANJOT, LOOK AT THIS -->
+					<!-- http://stackoverflow.com/questions/13202762/html-inside-twitter-bootstrap-popover -->
+					
+					<!-- Content for Popover #1 -->
+					<div class="hidden" id="a1">
+						<div class="popover-heading">
+							Blade of the Ruined King
+						</div>
+
+						<div class="popover-body">
+							<p><strong>Cost:</strong> 3200 gold</p>  
+							<p><strong>Unique Passive:</strong> Basic attacks deal 5% of the target's current Health in bonus physical damage on hit.</p>
+							<p><strong>Unique Active:</strong> Deals 15% of the target champions maximum health, heals you the same amount, and slows the target by 30% for 3 seconds.</p>
+						</div>
+					</div>
+					<!-- END OF SILLY MANJOT -->
+					
+				<div class="item ad crit">
+					<a data-toggle="popover" title="Infinity Edge" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="IE" src="images/items/Infinity_Edge_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap">
+					<a data-toggle="popover" title="Abyssal Scepter" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Abyssal" src="images/items/Abyssal_Scepter_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap cdr mp">
+					<a data-toggle="popover" title="Athene's Unholy Grail" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Athene's" src="images/items/Athene's_Unholy_Grail_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad">
+					<a data-toggle="popover" title="BF Sword" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="BF" src="images/items/B._F._Sword_item.png" height = "64" width = "64"></a></div>
+				<div class="item as">
+					<a data-toggle="popover" title="Berserker Greaves" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="ASboots" src="images/items/Berserker's_Greaves_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad">
+					<a data-toggle="popover" title="Bilgewater Cutlass" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Cutlass" src="images/items/Bilgewater_Cutlass_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad hp">
+					<a data-toggle="popover" title="Doran's Blade" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="DoranBlade" src="images/items/Doran's_Blade_item.png" height = "64" width = "64"></a></div>
+				<div class="item ar cdr mp">
+					<a data-toggle="popover" title="Frozen Heart" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="FrozenHeart" src="images/items/Frozen_Heart_item.png" height = "64" width = "64"></a></div>
+				<div class="item hp">
+					<a data-toggle="popover" title="Giants Belt" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Giants_Belt" src="images/items/Giant's_Belt_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad ap">
+					<a data-toggle="popover" title="Hextech Gunblade" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Gunblade" src="images/items/Hextech_Gunblade_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap">
+					<a data-toggle="popover" title="Hextech Revolver" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="HexRevolver" src="images/items/Hextech_Revolver_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap cdr ar">
+					<a data-toggle="popover" title="Iceborn Gauntlet" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Iceborn" src="images/items/Iceborn_Gauntlet_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad">
+					<a data-toggle="popover" title="Last Whisper" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="LW" src="images/items/Last_Whisper_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap hp">
+					<a data-toggle="popover" title="Liandry's Torment" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Liandry's" src="images/items/Liandry's_Torment_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap">	
+					<a data-toggle="popover" title="Lichbane" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="LichBane" src="images/items/Lich_Bane_item.png" height = "64" width = "64"></a></div>
+				<div class="item hp mr cdr">
+					<a data-toggle="popover" title="Locket of The Iron Solari" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Solari" src="images/items/Locket_of_the_Iron_Solari_item.png" height = "64" width = "64"></a></div>
+				<div class="item mp ad">
+					<a data-toggle="popover" title="Manamune" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Manamune" src="images/items/Manamune_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad mr">
+					<a data-toggle="popover" title="Maw of Malmortius" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Maw" src="images/items/Maw_of_Malmortius_item.png" height = "64" width = "64"></a></div>
+				<div class="item cdr mr mp">
+					<a data-toggle="popover" title="Mikael's Crucible" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Mikael's" src="images/items/Mikael's_Crucible_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap cdr mp">
+					<a data-toggle="popover" title="Morellonomicon" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Morellonomicon" src="images/items/Morellonomicon_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap">	
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Rod" src="images/items/Needlessly_Large_Rod_item.png" height = "64" width = "64"></a></div>
+				<div class="item mr">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Negatron" src="images/items/Negatron_Cloak_item.png" height = "64" width = "64"></a></div>
+				<div class="item ar">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Tabi" src="images/items/Ninja_Tabi_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad hp">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Phage" src="images/items/Phage_item.png" height = "64" width = "64"></a></div>
+				<div class="item as crit">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="PD" src="images/items/Phantom_Dancer_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Rabadon's" src="images/items/Rabadon's_Deathcap_item.png" height = "64" width = "64"></a></div>
+				<div class="item hp ar">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Randuin" src="images/items/Randuin's_Omen_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Hydra" src="images/items/Ravenous_Hydra_item.png" height = "64" width = "64"></a></div>
+				<div class="item hp ap">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="RoA" src="images/items/Rod_of_Ages_item.png" height = "64" width = "64"></a></div>
+				<div class="item as">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Runaan's" src="images/items/Runaan's_Hurricane_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap hp">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Rylai's" src="images/items/Rylai's_Crystal_Scepter_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Sheen" src="images/items/Sheen_item.png" height = "64" width = "64"></a></div>
+				<div class="item">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Sorcboots" src="images/items/Sorcerer's_Shoes_item.png" height = "64" width = "64"></a></div>
+				<div class="item hp mr">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Visage" src="images/items/Spirit_Visage_item.png" height = "64" width = "64"></a></div>
+				<div class="item hp ar">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Sunfire" src="images/items/Sunfire_Cape_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad cdr hp">	
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="BlackCleaver" src="images/items/The_Black_Cleaver_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="BT" src="images/items/The_Bloodthirster_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad cdr">	
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Brutaliser" src="images/items/The_Brutalizer_item.png" height = "64" width = "64"></a></div>
+				<div class="item ar">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Thornmail" src="images/items/Thornmail_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad hp ap as crit">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="TriForce" src="images/items/Trinity_Force_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="VampSceptre" src="images/items/Vampiric_Scepter_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="VoidStaff" src="images/items/Void_Staff_item.png" height = "64" width = "64"></a></div>
+				<div class="item hp">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Warmog" src="images/items/Warmog's_Armor_item.png" height = "64" width = "64"></a></div>
+				<div class="item as crit">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Zeal" src="images/items/Zeal_item.png" height = "64" width = "64"></a></div>
+				<div class="item ad as cdr">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Zephyr" src="images/items/Zephyr_item.png" height = "64" width = "64"></a></div>
+				<div class="item ap ar">
+					<a data-toggle="popover" title="Placeholder" data-content="Sed lacinia augue at mauris commodo, quis laoreet ipsum mollis. Nullam ante odio, consequat aliquet imperdiet quis, convallis quis ipsum." data-placement="bottom">
+					<img alt="Zhonya's" src="images/items/Zhonya's_Hourglass_item.png" height = "64" width = "64"></a></div>
+			</div>
+			                <hr class="hr-white hrsmall">
+			</div>		
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					"Group 12: hwc, mk, mdl, plm, bw"
+					<a href="mailto:someone@example.com">someone@example.com</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+		  </div>
+	</div><!-- /.middle -->
+	
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/items.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>
