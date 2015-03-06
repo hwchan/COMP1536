@@ -1,16 +1,18 @@
-body {
-	background-image: url(http://i.ytimg.com/vi/Vh-J6n5a3Rg/maxresdefault.jpg);
-
+html {
+	background-image: url(http://computerwallpapers.org/wp-content/uploads/2014/05/wpid-League-Of-Legends-Wallpaper-752.jpg);
+	background-size: 1920px, 1080px;
 }
-.middle-container{
-	background: rgba(0,0,0,.6);
+body {
+		background: linear-gradient(to bottom, rgba(0,0,0,.0) 0px,rgba(0,0,0,.95) 960px,rgba(0,0,0,1) 1080px); 
+}
+.middle-content{
+	background: rgba(0,0,0,.9);
 }
 h1 {
 	text-shadow: 2px 2px 3px #000000;
+	margin-top:10px;
 }
-.row {
-	background: rgba(0,0,0,1);
-}
+
 
 h2 {color:#0679BF;}
 
@@ -40,3 +42,18 @@ h2 {color:#0679BF;}
 }
 
 h3 {color: #ffd251;}
+
+.pagination>li>a{
+	background-color: #222;
+	border-color: #1B1B1B;
+	color: #9d9d9d;
+}
+
+.pagination>li>a:hover{
+	color: white;
+	background-color: #222;
+	border-color: #1B1B1B;
+}
+.noClick {
+	pointer-events:none;
+}
