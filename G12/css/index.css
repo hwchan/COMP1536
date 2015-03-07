@@ -1,11 +1,4 @@
-
-/* Image next to each news paragraph */
-
 /* News header color, padding, and block color */
-img.news{
-float: left;
-width: 52%;
-}
 h2 {
 	background: rgba(0,0,0,.8);
 	color: white;
@@ -28,8 +21,7 @@ height: 100%;
 }
 
 /* News article paragraphs */
-.inner-content{
-	margin-left: 53%;
+div.col-md-6{
 	background: rgba(191,191,191, 0.75);
 	padding: 1%;
 }
