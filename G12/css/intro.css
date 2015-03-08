@@ -14,8 +14,7 @@ color: rgba(200,200,200,.8);
 }
 
 /* Location, size, and border information of gameplay images */
-img.gameplay1{
-float: right;
+img.col-md-6{
 width: 50%;
 border-width: 5px;
 border-style: solid;
@@ -41,12 +40,9 @@ iframe {
 
 
 /* Color, position, and appearance of the gameplay paragraphs */
-.inner-content2{
+div.col-md-6{
 	background: rgba(6,14,31,.9);
 	color: rgba(200,150,0,1);
-	margin-right: 52%;
-	margin-left: 10px;
-	margin-top: 10px;
 	padding: 1%;
 	}
 	
