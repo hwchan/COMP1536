@@ -7,6 +7,12 @@ h2 {
 	padding-bottom: 20px;
 }
 
+/* Image next to news paragraph */
+img.col-md-6{
+width: 50%;
+padding: 0px 5px 5px 0px;
+}
+
 /* Background on which the news articles lie */
 .middle-content{
 	background: rgba(255,255,255,.25);
@@ -14,10 +20,6 @@ h2 {
 	margin-top: 15px;
 	box-shadow: 0px 0px 30px 1px #000000;
 	padding-bottom: 0;
-}
-
-.news-content{
-height: 100%;
 }
 
 /* News article paragraphs */

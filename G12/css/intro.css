@@ -19,6 +19,7 @@ width: 50%;
 border-width: 5px;
 border-style: solid;
 border-color: rgba(6,14,31,.9);
+padding: 0px;
 }
 
 /* Color, position, and appearance of the story and gameplay headings */
