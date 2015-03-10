@@ -3,13 +3,13 @@ var w = window.innerWidth;
 var h = window.innerHeight;
 var d = document.getElementById("imgselect").offsetTop;
 var ll = document.getElementById("imgselect").offsetLeft;
-document.getElementById("imgselect").onclick=function(){window.open('ChampSelect.html',"ChampSelect","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
-document.getElementById("item1").onclick=function(){window.open('ItemSelect.html',"Item1","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
-document.getElementById("item2").onclick=function(){window.open('ItemSelect.html',"Item2","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
-document.getElementById("item3").onclick=function(){window.open('ItemSelect.html',"Item3","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
-document.getElementById("item4").onclick=function(){window.open('ItemSelect.html',"Item4","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
-document.getElementById("item5").onclick=function(){window.open('ItemSelect.html',"Item5","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
-document.getElementById("item6").onclick=function(){window.open('ItemSelect.html',"Item6","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+document.getElementById("imgselect").onclick=function(){window.open('champselect.html',"ChampSelect","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+document.getElementById("item1").onclick=function(){window.open('itemselect.html',"Item1","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+document.getElementById("item2").onclick=function(){window.open('itemselect.html',"Item2","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+document.getElementById("item3").onclick=function(){window.open('itemselect.html',"Item3","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+document.getElementById("item4").onclick=function(){window.open('itemselect.html',"Item4","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+document.getElementById("item5").onclick=function(){window.open('itemselect.html',"Item5","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
+document.getElementById("item6").onclick=function(){window.open('itemselect.html',"Item6","width=500, height=500, top = "+(d+100)+", left="+(ll+100))};
 /* This is the part I hard code champion data. The textstring gives, in that order and number of digits: health(4) crit strike chance (4)/100%
 mana(4) damage (6)/1000 attackspeed(3)/1000 attackspeed increase%(3)/10 armour(5)/1000 magic resist(4)/100 Q cooldown (2) Q base damage(3)
 Q ad scaling(3) Q ap scaling(3) W cooldown(3) W base damage(3) W ad scaling (3) W ap scaling (3) E cooldown(3) E base damage (3) E ad scaling (3)
