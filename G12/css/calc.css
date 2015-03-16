@@ -8,7 +8,12 @@
     display: -webkit-flex; /* Safari */
     display: flex;
 }
-
+select{
+color: black;
+}
+option{
+color: black;
+}
 .champ-select ul{list-style-type:none}
 
 .champ-select ul li {display:inline}
