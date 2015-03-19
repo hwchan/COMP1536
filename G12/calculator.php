@@ -25,6 +25,22 @@
 		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
 	</noscript>
   <body>
+  <?php
+  $servername = "127.0.0.1";
+$username = "root";
+$password = "Rubixcube22";
+$dbname = "cdcol";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
+
+?>
   <script>
   function validateForm(){
 	  var form = document.forms["calculator"]["champions"].value;
@@ -103,16 +119,16 @@
 			<h1><span class="h1-capital">C</span>ALCULATOR</h1>
 			<div class="middle-content">
 				<div class = "champ-select">
-				<form name = "calculator" action = "http://localhost/calc.php" onsubmit = "validateForm()" method="post">
+				<form name = "calculator" action = "http://localhost/G12/calculator.php" onsubmit = "validateForm()" method="post">
 					<div>
                     <!--Click on the icon to select your champion. A pop-up should appear to let you select from 20+ champions.
 						For milestone 4 we've only included 3 to show functionality. More will be included once we have access
 						to database.-->
 					<h4> Champion selection</h4>
 					<select name="champions">
-					<option value="tryndamere">Tryndamere</option>
-					<option value="annie">Annie</option>
-					<option value="amumu">Amumu</option>
+					<option value = 0>Tryndamere</option>
+					<option value = 1>Annie</option>
+					<option value = 2>Amumu</option>
 					</select>
 					</div>
 					<div>
@@ -120,87 +136,113 @@
 						database-->
 					<h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please click to select your items</h4>
 					<select name="items1">
-					<option value="null"> &nbsp; </option>
-					<option value="botrk">botrk</option>
-					<option value="ie">ie</option>
-					<option value="berserkers_shoes">berserkers shoes</option>
-					<option value="fh">fh</option>
-					<option value="randuins">randuins</option>
-					<option value="spirit">spirit</option>
-					<option value="rod">rod</option>
-					<option value="deathcap">deathcap</option>
-					<option value="rylais">rylais</option>
-					<option value="iceborn">iceborn</option>
+					<?php
+						$list-of-item-names = "SELECT item_name FROM items";
+						for(int i=0; i<$list-of-item-names.length; i++){
+							echo "<option value=" . i . ">";
+							echo list-of-item-names[i];
+							echo "</option>";
+						}
+					?>
+					<option value="0"> &nbsp; </option>
+					<option value="1">botrk</option>
+					<option value="2">ie</option>
+					<option value="3">berserkers shoes</option>
+					<option value="4">fh</option>
+					<option value="5">randuins</option>
+					<option value="6">spirit</option>
+					<option value="7">rod</option>
+					<option value="8">deathcap</option>
+					<option value="9">rylais</option>
+					<option value="10">iceborn</option>
 					</select>
 					<select name="items2">
-					<option value="null"> &nbsp; </option>
-					<option value="botrk">botrk</option>
-					<option value="ie">ie</option>
-					<option value="berserkers_shoes">berserkers shoes</option>
-					<option value="fh">fh</option>
-					<option value="randuins">randuins</option>
-					<option value="spirit">spirit</option>
-					<option value="rod">rod</option>
-					<option value="deathcap">deathcap</option>
-					<option value="rylais">rylais</option>
-					<option value="iceborn">iceborn</option>
+					<option value="0"> &nbsp; </option>
+					<option value="1">botrk</option>
+					<option value="2">ie</option>
+					<option value="3">berserkers shoes</option>
+					<option value="4">fh</option>
+					<option value="5">randuins</option>
+					<option value="6">spirit</option>
+					<option value="7">rod</option>
+					<option value="8">deathcap</option>
+					<option value="9">rylais</option>
+					<option value="10">iceborn</option>
 					</select>
 					<select name="items3">
-					<option value="null"> &nbsp; </option>
-					<option value="botrk">botrk</option>
-					<option value="ie">ie</option>
-					<option value="berserkers_shoes">berserkers shoes</option>
-					<option value="fh">fh</option>
-					<option value="randuins">randuins</option>
-					<option value="spirit">spirit</option>
-					<option value="rod">rod</option>
-					<option value="deathcap">deathcap</option>
-					<option value="rylais">rylais</option>
-					<option value="iceborn">iceborn</option>
+					<option value="0"> &nbsp; </option>
+					<option value="1">botrk</option>
+					<option value="2">ie</option>
+					<option value="3">berserkers shoes</option>
+					<option value="4">fh</option>
+					<option value="5">randuins</option>
+					<option value="6">spirit</option>
+					<option value="7">rod</option>
+					<option value="8">deathcap</option>
+					<option value="9">rylais</option>
+					<option value="10">iceborn</option>
 					</select>
 					<select name="items4">
-					<option value="null"> &nbsp; </option>
-					<option value="botrk">botrk</option>
-					<option value="ie">ie</option>
-					<option value="berserkers_shoes">berserkers shoes</option>
-					<option value="fh">fh</option>
-					<option value="randuins">randuins</option>
-					<option value="spirit">spirit</option>
-					<option value="rod">rod</option>
-					<option value="deathcap">deathcap</option>
-					<option value="rylais">rylais</option>
-					<option value="iceborn">iceborn</option>
+					<option value="0"> &nbsp; </option>
+					<option value="1">botrk</option>
+					<option value="2">ie</option>
+					<option value="3">berserkers shoes</option>
+					<option value="4">fh</option>
+					<option value="5">randuins</option>
+					<option value="6">spirit</option>
+					<option value="7">rod</option>
+					<option value="8">deathcap</option>
+					<option value="9">rylais</option>
+					<option value="10">iceborn</option>
 					</select>
 					<select name="items5">
-					<option value="null"> &nbsp; </option>
-					<option value="botrk">botrk</option>
-					<option value="ie">ie</option>
-					<option value="berserkers_shoes">berserkers shoes</option>
-					<option value="fh">fh</option>
-					<option value="randuins">randuins</option>
-					<option value="spirit">spirit</option>
-					<option value="rod">rod</option>
-					<option value="deathcap">deathcap</option>
-					<option value="rylais">rylais</option>
-					<option value="iceborn">iceborn</option>
+					<option value="0"> &nbsp; </option>
+					<option value="1">botrk</option>
+					<option value="2">ie</option>
+					<option value="3">berserkers shoes</option>
+					<option value="4">fh</option>
+					<option value="5">randuins</option>
+					<option value="6">spirit</option>
+					<option value="7">rod</option>
+					<option value="8">deathcap</option>
+					<option value="9">rylais</option>
+					<option value="10">iceborn</option>
 					</select>
 					<select name="items6">
-					<option value="null"> &nbsp; </option>
-					<option value="botrk">botrk</option>
-					<option value="ie">ie</option>
-					<option value="berserkers_shoes">berserkers shoes</option>
-					<option value="fh">fh</option>
-					<option value="randuins">randuins</option>
-					<option value="spirit">spirit</option>
-					<option value="rod">rod</option>
-					<option value="deathcap">deathcap</option>
-					<option value="rylais">rylais</option>
-					<option value="iceborn">iceborn</option>
+					<option value="0"> &nbsp; </option>
+					<option value="1">botrk</option>
+					<option value="2">ie</option>
+					<option value="3">berserkers shoes</option>
+					<option value="4">fh</option>
+					<option value="5">randuins</option>
+					<option value="6">spirit</option>
+					<option value="7">rod</option>
+					<option value="8">deathcap</option>
+					<option value="9">rylais</option>
+					<option value="10">iceborn</option>
 					</select>
 					</div>
 				</div>
-				
+				<?php
+				// define variables and set to empty values
+$champion = $item1 = $item2 = $item3 = $item4 = $item5 = $item6 = "";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $champion = test_input($_POST["champions"]);
+  $item1 = test_input($_POST["items1"]);
+  $item2 = test_input($_POST["items2"]);
+  $item3 = test_input($_POST["items3"]);
+  $item4 = test_input($_POST["items4"]);
+  $item5 = test_input($_POST["items5"]);
+  $item6 = test_input($_POST["items6"]);
+}
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+	?>
                 <!--Champbase is used to store values passed from the child window.-->
 				<br><br id="champbase">
 				<div class="outcomebox">
@@ -210,7 +252,7 @@
 						<img id="SelfP" alt="Passive" src="champions/_Tryndamere/images/P.png" height = "100" width = "100">
 					<!-- passiveability lets us change the name of passive ability once a champ has been selected-->
 						<br><span id="passiveability">Battle Fury</span>:
-						<br>The damage per hit is <?php print "Hello world!"; ?> 
+						<br>The damage per hit is 0.
 						<br>The damage per second is 0.
 					</div>
 					<div>
@@ -244,15 +286,78 @@
 				<button id="calculatestats">Calculate it now.</button><br id="stats1"><br id="stats2">
 				<!--these id's here display their respective values-->
 				</form>
-				Your total combat stats are : <span id="damage">0</span> attack damage, <span id="critstrike">0</span>% critical strike, 
-				<span id="attackspeed">0</span> attacks/sec, <span id="ap">0</span> ability power, <span id="cdr">0</span>% cool down reduction
-				,<span id="mana">0</span>mana, <span id="health">0</span> health, <span id="armour">0</span> armour, <span id="mres">0</span> magic resist.
-				<br id="stats3"><br id="stats4">
-				Your auto-attack damage per second is <span id="AAdps">0</span>. <br id="stats5"><br id="stats6">
-				Your combined damage per second is <span id="totaldps">0</span>.
-				
-
-				
+				<p>Your chapmion stats are:</p>  
+				<?php
+						$sql = "SELECT * FROM championstats LIMIT $champion, 1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+			echo $row["Hitpoints"] . $row["Attackdmg"] . $row["Attackspeed"] .  "<br>";
+	}
+}
+						?> 
+				<p>Item 1 stats are:</p>
+				 <?php
+						$sql = "SELECT * FROM items LIMIT $item1, 1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+		 $stuff = $row["Damage"]. $row["Atkspeed"] . "<br>";
+	}
+}
+echo $stuff;
+						?> 
+				<p>Item 2 stats are:</p>
+				 <?php
+						$sql = "SELECT * FROM items LIMIT $item2, 1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+			echo $row["Damage"]. $row["Atkspeed"] . "<br>";
+	}
+}
+						?> 
+				<p>Item 3 stats are:</p>
+				 <?php
+						$sql = "SELECT * FROM items LIMIT $item3, 1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+			echo $row["Damage"]. $row["Atkspeed"] . "<br>";
+	}
+}
+						?> 
+				<p>Item 4 stats are:</p>
+				 <?php
+						$sql = "SELECT * FROM items LIMIT $item4, 1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+			echo $row["Damage"]. $row["Atkspeed"] . "<br>";
+	}
+}
+						?> 
+				<p>Item 5 stats are:</p>
+				 <?php
+						$sql = "SELECT * FROM items LIMIT $item5, 1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+			echo $row["Damage"]. $row["Atkspeed"] . "<br>";
+	}
+}
+						?> 
+				<p>Item 6 stats are:</p>
+				 <?php
+						$sql = "SELECT * FROM items LIMIT $item6, 1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+			echo $row["Damage"]. $row["Atkspeed"] . "<br>";
+	}
+}
+						?> 
+		
 				<hr>
 				
 				<div class = "champ-select">
