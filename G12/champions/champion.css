@@ -105,3 +105,19 @@ color: #0679BF;
 	margin-left: 15px;
 	width: 30%;
 }
+
+/*********************/
+/* Scalings          */
+/*********************/
+ad {
+	color: orange;
+}
+ap {
+	color: lightgreen;
+}
+mana {
+	color: blue;
+}
+health {
+	color: red;
+}

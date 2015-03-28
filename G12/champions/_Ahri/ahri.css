@@ -4,22 +4,22 @@ html {
 	background-color: black;
 }
 #attack {
-	/* width X * 40px + 32px*/
-	width: 10%;
-	max-width: 72px;
+	/* width 3 * 40px + 32px*/
+	min-width: 64px;
+	max-width: 152px;
 }
 #defence {
-	/* width X * 40px + 32px*/
-	width: 10%;
-	max-width: 72px;
+	/* width 4 * 40px + 32px*/
+	min-width: 64px;
+	max-width: 192px;
 }
 #ability {
-	/* width X * 40px + 32px*/
-	width: 10%;
-	max-width: 72px;
+	/* width 8 * 40px + 32px*/
+	min-width: 64px;
+	max-width: 532px;
 }
 #difficulty {
-	/* width X * 40px + 32px*/
-	width: 10%;
-	max-width: 72px;
+	/* width 5 * 40px + 32px*/
+	min-width: 64px;
+	max-width: 232px;
 }
