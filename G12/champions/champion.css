@@ -95,6 +95,8 @@ color: #0679BF;
 	/* Stops the icons from being scaled by the flex box. */
 	height: 64px;
 	margin-right: 15px;
+	border: 2px solid #a1a1a1;
+	border-radius: 5px;
 }
 .abilitymiddle {
 	width: 60%;
@@ -115,9 +117,9 @@ ad {
 ap {
 	color: lightgreen;
 }
-mana {
-	color: blue;
+mp {
+	color: lightblue;
 }
-health {
-	color: red;
+hp {
+	color: darkred;
 }
