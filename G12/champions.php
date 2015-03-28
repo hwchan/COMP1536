@@ -76,16 +76,16 @@
 						<a href="champions/_Ahri/Ahri.html"><img src="champions/_Ahri/images/Icon.png" alt="Ahri icon">Ahri</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Fizz/Fizz.html"><img src="champions/_Fizz/images/icon.png" alt="champion icon">Fizz</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Masteryi/Masteryi.html"><img src="champions/_Masteryi/images/icon.png" alt="champion icon">Master Yi</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Yasuo/Yasuo.html"><img src="champions/_Yasuo/images/icon.png" alt="champion icon">Yasuo</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Zed/Zed.html"><img src="champions/_Zed/images/icon.png" alt="champion icon">Zed</a>
 						</div>
 					</div>
 					<hr class="hr-white hrsmall">
@@ -127,19 +127,19 @@
 					<hr class="hr-white">
 					<div class="group">
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Garen/Garen.html"><img src="champions/_Garen/images/icon.png" alt="champion icon">Garen</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Gnar/Gnar.html"><img src="champions/_Gnar/images/icon.png" alt="champion icon">Gnar</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Jax/Jax.html"><img src="champions/_Jax/images/icon.png" alt="champion icon">Jax</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Poppy/Poppy.html"><img src="champions/_Poppy/images/icon.png" alt="champion icon">Poppy</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Tryndamere/Tryndamere.html"><img src="champions/_Tryndamere/images/icon.png" alt="champion icon">Tryndamere</a>
 						</div>
 					</div>
 					<hr class="hr-white hrsmall">
@@ -154,29 +154,20 @@
 					<hr class="hr-white">
 					<div class="group">
 						<div class="icon">
+						<a href="champions/_Draven/Draven.html"><img src="champions/_Draven/images/icon.png" alt="champion icon">Draven</a>
+						</div>
+						<div class="icon">
+						<a href="champions/_Ezreal/Ezreal.html"><img src="champions/_Ezreal/images/icon.png" alt="champion icon">Ezreal</a>
+						</div>
+						<div class="icon">
 						<a href="champions/_Jinx/Jinx.html"><img src="champions/_Jinx/images/Icon.png" alt="champion icon">Jinx</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Lucian/Lucian.html"><img src="champions/_Lucian/images/icon.png" alt="champion icon">Lucian</a>
 						</div>
 						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
-						</div>
-						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
-						</div>
-						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
+						<a href="champions/_Teemo/Teemo.html"><img src="champions/_Teemo/images/icon.png" alt="champion icon">Teemo</a>
 						</div>						
-						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
-						</div>
-						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
-						</div>
-						<div class="icon">
-						<a href="champions/_Placeholder/Placeholder.html"><img src="champions/_Placeholder/images/icon.png" alt="champion icon">Placeholder</a>
-						</div>
 					</div>
 					<hr class="hr-white hrsmall">
 				</div>
