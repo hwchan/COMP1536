@@ -16,6 +16,7 @@ function registerToggle(){
 		//document.getElementById("submitButton").value = "Sign in";
 		document.getElementById("registerLink").innerHTML = "Register";
 		document.getElementById("signin-title").innerHTML = "Sign in";
+		document.getElementById("repeat-password").value = '';
 	}
 	//Show registration only div
 	else{

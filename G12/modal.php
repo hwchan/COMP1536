@@ -2,7 +2,7 @@
 <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+			<form name="signIn" action="form.php" onsubmit="return validateSignIn()" method="POST">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h1 id="signin-title">Sign in</h1>
@@ -28,7 +28,7 @@
 						<hr class="hr-white">
 						<!-- Repeat password -->
 						<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
-						<input type="password" name="password2" size="40">
+						<input id="repeat-password" type="password" name="password2" size="40">
 						<br>
 						<!-- Terms -->
 						<input type="checkbox" name="termsConditions">

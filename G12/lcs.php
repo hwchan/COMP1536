@@ -290,9 +290,9 @@
 							</a>
 						</li>
 						<li class="active"><a href="lcs.html">1</a></li>
-						<li><a href="lcs2.html">2</a></li>
+						<li><a href="lcs2.php">2</a></li>
 						<li>
-							<a href="lcs2.html" aria-label="Next">
+							<a href="lcs2.php" aria-label="Next">
 								<span aria-hidden="true">&raquo;</span>
 							</a>
 						</li>
