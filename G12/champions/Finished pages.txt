@@ -3,3 +3,4 @@ Annie
 Amumu
 Cho'gath
 Draven
+Ezreal
