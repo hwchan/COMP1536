@@ -14,7 +14,43 @@ option{
     -ms-flex: 1;  /* IE 10 */    
     width = 200px;		
 }
-
+#SelfQ {
+    background-image: url(../images/qtest.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: 1px solid #1c1c1c;
+}
+#SelfW {
+    background-image: url(../images/w.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: 1px solid #1c1c1c;
+}
+#SelfE {
+    background-image: url(../images/e.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: 1px solid #1c1c1c;
+}
+#SelfR {
+    background-image: url(../images/r.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: 1px solid #1c1c1c;
+}
+#auto-attk {
+    background-image: url(../images/damage.png);
+    background-color: rgba(28,28,28,.7);
+    background-size: 70px;
+    margin: 0px -30px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: 1px solid #1c1c1c;
+}
 /*This one gives the damage for each
 individual ability*/
 .outcomebox{
@@ -31,12 +67,14 @@ individual ability*/
     flex: 1;
 }
 #calculatestats {
-    background-color: #1C1C1C;
+    background-color: rgba(255,255,255,.8);
+    font-weight: bold;
+    margin-top: 25px;
+}
+#calculatestats:hover {
+    background-color: rgba(28,28,28,.7);
     color: #ffd251;
-    border: 0px;
-    font-size: 110%;
-    padding: 1%;
-    margin: 10px;
+    font-weight: bold;
 }
 
 #items1, #items2, #items3,#items4,#items5,#items6,#btn-champ {
@@ -48,7 +86,7 @@ individual ability*/
     border-radius: 5px;
     cursor:pointer;
 }
-h4{
+h4 {
     color:#0679bf;
     padding-bottom: 5px;
     margin-top: -5px;
@@ -62,4 +100,12 @@ h4{
 .border-right {
     border-right: 2px solid #1C1C1C;
     height: 100px;
+}
+#SelfQ,#SelfE,#SelfR,#SelfW {
+    padding-bottom: 3px;
+}
+#ro.row {
+    background-color: rgba(28,28,28,.7);
+    margin-left: -30px;
+    margin-right: -30px;
 }
