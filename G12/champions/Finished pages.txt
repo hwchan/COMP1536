@@ -18,12 +18,12 @@ Lucian
 Malphite
 Nasus
 Masteryi
+Yasuo
+Vayne
+Zed
 
 to do
 
 Poppy
 Teemo
 Tryndamere
-Vayne
-Yasuo
-Zed
