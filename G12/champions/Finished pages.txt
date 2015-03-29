@@ -7,10 +7,10 @@ Ezreal
 Fiddlesticks
 Fizz
 Jinx
+Garen
 
 to do
 
-Garen
 Gnar
 Jax
 Katarina

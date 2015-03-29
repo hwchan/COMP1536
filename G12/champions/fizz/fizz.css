@@ -6,20 +6,24 @@ html {
 #attack {
 	/* width X * 40px + 32px*/
 	min-width: 64px;
-	max-width: 272px;
+	width: 60%;
+	max-width: 312px;
 }
 #defence {
 	/* width X * 40px + 32px*/
 	min-width: 64px;
-	max-width: 192px;
+	width: 40%;
+	max-width: 232px;
 }
 #ability {
 	/* width X * 40px + 32px*/
 	min-width: 64px;
-	max-width: 192px;
+	width: 70%;
+	max-width: 352px;
 }
 #difficulty {
 	/* width X * 40px + 32px*/
 	min-width: 64px;
+    width: 60%;
 	max-width: 312px;
 }
