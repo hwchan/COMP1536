@@ -5,3 +5,4 @@ Cho'gath
 Draven
 Ezreal
 Fiddlesticks
+Fizz
