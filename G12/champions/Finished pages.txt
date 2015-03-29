@@ -6,9 +6,10 @@ Draven
 Ezreal
 Fiddlesticks
 Fizz
-Jinx - caps fixed
+Jinx
 
-to go
+to do
+
 Garen
 Gnar
 Jax
