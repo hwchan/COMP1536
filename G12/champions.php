@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
     <meta name="author" content="hwc, mk, mdl, plm, bw">
-    <link rel="icon" href="images/icon.png">
+	<link rel="icon" href="/images/icon.jpg">
 
     <title>Champions</title>
 
