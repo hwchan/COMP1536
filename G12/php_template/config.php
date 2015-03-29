@@ -3,5 +3,5 @@
 	define('DB_USER', "root");
 	define('DB_PASSWORD', "");
 	define('DB_DATABASE', "users");
-	define('HOMEURL', "index.php");
+	define('HOMEURL', "../index.php");
 ?>

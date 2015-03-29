@@ -1,47 +1,3 @@
-<!DOCTYPE html>
-<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
-    <meta name="author" content="hwc, mk, mdl, plm, bw">
-    <link rel="icon" href="images/icon.png">
-
-    <title>LCS</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <!-- Base style -->
-    <link href="css/base.css" rel="stylesheet">
-	<!-- Custom page style -->
-	<link href="css/lcs.css" rel="stylesheet">
-
-  </head>
-	<!-- Display a warning for disabled Javascript -->
-	<body>
-	<noscript>
-		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
-	</noscript>
-	<div class="container">
-	
-		<?php
-			# Gets the current page name to set the class="active" attribute
-			$active = basename(__FILE__, '.php'); ;
-			require "nav.php";
-		?>
-
-		<!-- Page heading -->
-		 <div class="middle-container">
-		  	<h1><span class="h1-capital">L</span>EAGUE OF <span class="h1-capital">L</span>EGENDS <span class="h1-capital">C</span>HAMPIONSHIP <span class="h1-capital">S</span>ERIES</h1>
-			<h3>North America</h3>
-		<!-- End of page heading -->
-
-			 				<!--*** All of the team information and pictures were taken from 'http://na.lolesports.com/na-lcs/2015/spring/teams' ***-->
-			 
-			<div class="middle-content">
-				
 			<!-- Team 1 -->
 				<!-- Class row that contains left, mid, and right column -->
 				<div class="row">
@@ -280,40 +236,5 @@
 				</div>
 				<!-- End of Social media -->
 			<!-- End of team 5 -->
-			<br>
-			<br>
-			<nav class="text-center">
-					<ul class="pagination">
-						<li>
-							<a href="lcs.php" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-						</li>
-						<li><a href="lcs.php">1</a></li>
-						<li class="active"><a href="lcs2.html">2</a></li>
-						<li>
-							<a aria-label="Next" class="noClick">
-								<span aria-hidden="true">&raquo;</span>
-							</a>
-						</li>
-					</ul>
-				</nav>			
+	
 			</div><!-- End of middle content -->
-			
-			<?php require "footer.php" ?>
-			
-		  </div>
-	</div><!-- /.middle -->
-	
-	<?php require "modal.php" ?>
-	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/base.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
-  </body>
-</html>
