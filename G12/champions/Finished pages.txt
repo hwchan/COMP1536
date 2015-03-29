@@ -10,18 +10,18 @@ Jinx
 Garen
 Gnar
 Jax
+Katarina
+Leona
+Ryze
+Orianna
+Lucian
+Malphite
+Nasus
 
 to do
 
-Katarina
-Leona
-Lucian
-Malphite
 Masteryi
-Nasus
-Orianna
 Poppy
-Ryze
 Teemo
 Tryndamere
 Vayne

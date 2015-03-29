@@ -167,7 +167,10 @@
 						</div>
 						<div class="icon">
 						<a href="champions/teemo/teemo.html"><img src="champions/teemo/images/icon.png" alt="champion icon">Teemo</a>
-						</div>						
+						</div>
+						<div class="icon">
+						<a href="champions/vayne/vayne.html"><img src="champions/vaybe/images/icon.png" alt="champion icon">Vayne</a>
+						</div>	
 					</div>
 					<hr class="hr-white hrsmall">
 				</div>
