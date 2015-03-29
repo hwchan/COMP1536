@@ -224,9 +224,11 @@ database-->
 Damage over time takes into consideration of the ability cooldown and attack speed (for auto-attack)-->
 
                             <div id="SelfQ" class="col-md-3 col-sm-6">
+                                <div id="content">
                                 <h5>Bloodlust</h5>
                                 <br>Damage per hit: <span id="Qdmg">0</span>
                                 <br>Damage per second: <span id="Qdps">0</span>
+                                    </div>
                             </div>
                             <div id="SelfW" class="col-md-3 col-sm-6">
                                 <h5>Mocking Shout</h5>
@@ -246,20 +248,20 @@ Damage over time takes into consideration of the ability cooldown and attack spe
                         </div>
                         <br>
                         <div id="row">
-                            <div id="auto-attk" class="col-md-5">
+                            <div id="auto-attk" class="col-md-4">
                                 <h5>Auto Attack</h5>
                                 Damage per hit:
                                 <br>Damage per second:
                                 
                             </div>
-                            <div class="col-md-5"></div>
-                            <div class="col-md-2"><button id="calculatestats" class="btn btn-default">Calculate it now</button></div>
+                            <div class="col-md-6"></div>
+                            <div class="col-md-2"><button id="calculatestats" class="btn btn-default">Calculate it now!</button></div>
                         </div>
                         <!--stats1 to stats 6 are used to hold item stats passed from child windows.-->
                         
                         <!--these id's here display their respective values-->
                         </form>
-
+                    
                 </div>
 
 
