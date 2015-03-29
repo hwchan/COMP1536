@@ -66,11 +66,11 @@
 					<div class="col-md-4 col-sm-4">
 						<h3 class="members">Team</h3>
 						<ul class="memb_bg">
-							<li>Balls (Top)</li>
-							<li>Meteos (Jungler)</li>
-							<li>Hai (Mid)</li>
-							<li>Sneaky (ADC)</li>
-							<li>LemonNation (Support)</li>
+							<li>[Top]&nbsp;Balls</li>
+							<li>[Jungler]&nbsp;Meteos</li>
+							<li>[Mid]&nbsp;Hai</li>
+							<li>[ADC]&nbsp;Sneaky</li>
+							<li>[Support]&nbsp;LemonNation</li>
 						</ul>
 					</div>	
 					<!-- End of right column -->
@@ -80,10 +80,10 @@
 				<!-- Social media for team -->
 				<br>
 				<div class="row text-center">
-					<div class="col-sm-3"><img src="https://g.twimg.com/Twitter_logo_blue.png" alt="twit" width="20" height="20">&nbsp;<a class="work" href="https://twitter.com/Cloud9gg">Twitter</a></div>
+					<div class="col-sm-3"><a href="https://twitter.com/Cloud9gg">Twitter</a></div>
 					<div class="col-sm-3"><a href="https://www.facebook.com/cloud9gg">Facebook</a></div>
-					<div class="col-sm-3"><img src="http://img3.wikia.nocookie.net/__cb20141216220129/leagueoflegends/images/0/01/Cloud_9_LCS_Logo.png" alt="twitter" width="25" height="25">&nbsp;<a href="http://cloud9.gg/lol-na-cloud9/">Website</a></div>
-					<div class="col-sm-3"><img src="http://na.lolesports.com/sites/default/files/favicon.ico" alt="twitter" width="25" height="25">&nbsp;<a href="http://na.lolesports.com/na-lcs/2015/spring/teams/cloud9">E-Sports</a></div>
+					<div class="col-sm-3"><a href="http://cloud9.gg/lol-na-cloud9/">Website</a></div>
+					<div class="col-sm-3"><a href="http://na.lolesports.com/na-lcs/2015/spring/teams/cloud9">E-Sports</a></div>
 				</div>
 				<hr>
 				<!-- End of Social media -->

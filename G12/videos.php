@@ -37,15 +37,15 @@
 				<!-- Video 1 -->
 				<iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/tEnsqpThaFg" allowfullscreen>
 				</iframe>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper dignissim gravida. Phasellus sed pulvinar eros. Nulla pulvinar magna id tincidunt tempor. Vivamus velit mi, tristique quis justo et, tincidunt luctus odio. Sed porttitor placerat massa, vel hendrerit turpis laoreet at. In eu cursus lectus, eget consequat nisi. Quisque vitae euismod leo, id tempus sem.</p>
+				<p>Get up close and personal with your favorite champions in the League of Legends Cinematic: A Twist of Fate.</p>
 				<hr>
 				<!-- Video 2 -->
 				<iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/vzHrjOMfHPY" allowfullscreen></iframe>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper dignissim gravida. Phasellus sed pulvinar eros. Nulla pulvinar magna id tincidunt tempor. Vivamus velit mi, tristique quis justo et, tincidunt luctus odio. Sed porttitor placerat massa, vel hendrerit turpis laoreet at. In eu cursus lectus, eget consequat nisi. Quisque vitae euismod leo, id tempus sem.</p>
+				<p>Day breaks over a landscape consecrated by blood and steel. A battle begins as a new dawn rises.</p>
 				<hr>
 				<!-- Video 3 -->
 				<iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/IzMnCv_lPxI" allowfullscreen></iframe>
-				<p>	Pellentesque nec laoreet est, quis accumsan libero. Aliquam a auctor ligula. Aliquam tristique pellentesque sapien eu luctus. Sed velit ipsum, volutpat gravida nibh in, cursus volutpat lorem. Donec in ligula eget leo lobortis aliquam. Suspendisse suscipit tempus vehicula. In euismod dapibus vehicula. Maecenas in nulla ipsum. In convallis, elit eu pretium elementum, ligula neque iaculis.</p>
+				<p>This video shows the first ever gameplay of league of legends and the introduction to the game. Also this was the first cinematic by the company.</p>
 				<hr>
 			</div>
 			
