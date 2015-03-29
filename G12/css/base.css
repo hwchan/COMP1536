@@ -7,6 +7,9 @@ html{
 body {
 	background: url("../images/Summoners_Rift.jpg") no-repeat top;
 }
+#email{
+	color: white;
+}
 /************* 
 	Navbar 
 **************/
