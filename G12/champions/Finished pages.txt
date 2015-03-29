@@ -8,11 +8,11 @@ Fiddlesticks
 Fizz
 Jinx
 Garen
+Gnar
+Jax
 
 to do
 
-Gnar
-Jax
 Katarina
 Leona
 Lucian
