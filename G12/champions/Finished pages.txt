@@ -4,3 +4,4 @@ Amumu
 Cho'gath
 Draven
 Ezreal
+Fiddlesticks
