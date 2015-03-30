@@ -40,8 +40,8 @@
 					document.write(" \
 					<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
 					<ul class=\"dropdown-menu inverse-dropdown\"> \
-						<li><a href=\"../../videos.php\">../../Videos</a></li> \
-						<li><a href=\"../../lcs.php\">../../Pro teams</a></li> \
+						<li><a href=\"../../videos.php\">Videos</a></li> \
+						<li><a href=\"../../lcs.php\">Pro teams</a></li> \
 					</ul> \
 					")
 				</script>
